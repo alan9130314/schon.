@@ -1,223 +1,271 @@
-#nav{
-    height: 50px;
-}
-.nav-items{
-    width: 75%;
-    margin: 0 auto;
-}
-
-.index{
-    height: 50px;
-    width: calc(100% / 9);
-    margin: 0 15px;
-    line-height: 1.7;
-    text-align: center;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: #000;
-}
+/*
+header #282828
+header hover #3f3e43
+black fontcolor 000
+gray font color 
+box bgcolor #4c4c4c
+*/
 
 
-.index:hover{
-    color: rgb(255, 60, 60);
+a:hover {
     text-decoration: none;
 }
 
-.category{
-    height: 50px;
-    width: calc(100% / 9);
-    margin: 0 15px;
-    padding-top: 10px;
-    font-weight: 500;
-    text-align: center;
-    cursor: pointer;
-
-}
-
-.category:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(170, 170, 170);
-}
-
-.nav-item_write{
-    height: 50px;
-    width: calc(100% / 7);
-    margin: 0 15px;
-    padding-top: 10px;
-    font-weight: 700;
-    text-align: center;
-    cursor: pointer;
-    color: rgb(255, 93, 93);
-}
-.nav-item_write:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 93, 93);
-}
-
-.breadcrumb{
-    text-transform: uppercase;
-}
-
-.board-title{
-    display: inline-block;
-    width: 33%;
-    text-align: center;
-    border-radius: 10%;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 107, 107);
-    margin-bottom: 1rem;
-}
-
-.board{
-    display: grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-column-gap: 1%;
-    grid-row-gap: 1%;
-
-
-}
-
-.post-block{
-    border: 1px solid rgb(216, 216, 216);
-    border-radius: 3%;
-    padding: 2%;
-    overflow: hidden;
+.header-contact,
+.header-member {
+    background-color: #282828;
+    color: #939393;
     cursor: pointer;
 }
 
-.post-block h3.title{
-    color: rgb(112, 112, 112);
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-
-
-}
-
-.post-block img{
-    width: 100%;
-    height: auto;
-
-}
-
-.post-category{
-    border: 1px solid rgb(209, 209, 209);
-    border-radius: 5px;
-    color: rgb(74, 153, 255);
-    cursor: pointer;
-    height: 30px;
-    width:  100px;
-    text-align: center;
+.header-orderTrack,
+.header-myAcc,
+.header-checkOut {
+    padding: .3rem 1.5rem;
+    text-transform: capitalize;
     font-weight: 500;
 }
 
-.post-category:hover{
-    border: 1px solid rgb(74, 153, 255);
+.header-orderTrack:hover,
+.header-myAcc:hover,
+.header-checkOut:hover {
+    background-color: #3f3e43;
+}
+
+.header-contact,
+.header-member a {
+    color: #939393;
+}
+
+@media (max-width:425px) {
+    .form-control {
+        width: 85%;
+    }
+}
+
+.box1,.box2 {
+    background-color: #4c4c4c;
     color: rgb(255, 255, 255);
-    background-color: rgb(74, 153, 255);
-
+    height: 50vh;
+}
+.gry-tag{
+    background-color: #535353;
+}
+.box1 .content{
+    font-size: .8rem;
+}
+.box2{
+    position: relative;
+}
+.box2 .subtitle{
+    letter-spacing: .2rem;
+}
+.circle{
+    background-color: #62c5de;
+    width: 7rem;
+    height: 7rem;
+    text-align: center;
+}
+.box2 .onSale{
+    color: #b4e1ed;
+}
+.td-lt{
+    text-decoration:line-through;
+    font-size: .5rem;
+}
+.circle .price{
+    font-size: 1.5rem;
 }
 
-
-/*postpanel*/
-#post-panel{
-    display: none;
-    position: fixed;
-    top:15%;
-    left:33%;    
-    background-color: #fff;
-    width: 33%;
-    border: 1px solid rgb(207, 207, 207);
-
+.box2 .shopNow{
+    position: absolute;
+    bottom: 1rem;
+    left:1rem;
 }
 
-#post-panel.open{
-    display: block;
+.box2 a{
+    color: rgb(255, 255, 255);
+}
+.box2 span.icon i{
+    height: 1.4rem;
+    width: 1.4rem;
+    line-height: 1.3;
+    border-radius:  50%;
+    border: 1px solid rgb(255, 255, 255);
+    text-align: center;
+
+}
+.box3{
+    background-color: #f3f3f3;
+    position: relative;
+    height: 25vh;
 }
 
+.box4{
+    background-color: #f3f3f3;
+    position: relative;
+    height: calc(25vh - .25rem);
+}
+.box3 .title{
+    color: #939393;
+    
+}
+.rating{
+    color: #c8a760;
+    font-size: 0.5rem;
+}
+.sale-red{
+    color: #991015;
+}
+.box3 .shopNow{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+}
+.tag-bl a{ 
+    padding: .2rem .4rem;
+    background-color: #2e2d32;
+    color: rgb(255, 255, 255);
+}
 
-#post-panel label{
-    color: rgb(214, 214, 214);
+.box4 .title{
+    color: #2c3e66;
+    letter-spacing: 1px;
+}
+.box4 .onSale{
+    color: rgb(134, 134, 134);
+    font-size: .5rem;
+}
+.box4 .price{
+    color: #2c3e66;
+    font-size: 1.5rem;
+}
+.box4 .shopNow a{
+    color: #2c3e66;
+    font-size: .7rem;
+}
+
+.box4 .shopNow i{
+    border-radius: 50%;
+    border: 1px solid #000;
+    height: 1rem;
+    width: 1rem;
+    text-align: center;
+    line-height: 1.2;
     font-size: .8rem;
 }
 
-.post-panel-header{
-    text-align: center;
-}
 
-.close{
+
+/*box5-7*/
+
+.box5{
     position: relative;
-    top: 5px;
-    right: 10px;
-    cursor: pointer;
+    background-color: #d0e9b0;
+    height: 20vh;
 }
-
-.post-panel-body{
-    border-bottom: 1px solid rgb(211, 211, 211);
-}
-
-.post-panel-body{
-    padding: 10px;
-}
-.dropdown-categories{
-    color: rgb(0, 0, 0);
-    width: 25%;
-    
-}
-
-.post-panel-body .title{
-    border: 1px solid rgb(199, 199, 199);
-    width: 100%;
-}
-
-#post-panel textarea{
-    width: 100%;
-    height: 200px;
-    border: 1px solid rgb(201, 201, 201)
-}
-
-
-
-
-#post-panel button{
-    display: none;
-}
-
-#post-panel button{
-    cursor: pointer;
-    padding: 5px;
+.box5 .subtitle,.box5 .title{
     color: rgb(255, 255, 255);
-    border: none;
 }
 
-#post-panel.new button.create,#post-panel.new button.cancel{
-    display: block;
-    width: 50%;
-    float: left;
+.box5 .subtitle{
+    letter-spacing: 3px;
+
+}
+.box5 .title{
+    letter-spacing: 2px;
+    font-size: 1.5rem;
 }
 
-#post-panel.update button.update,#post-panel.update button.cancel,#post-panel.update button.delete{
-    display: block;
+.box5 .shopNow a{
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+}
+.box5 .shopNow i{
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #b1de89;
+    height: 1.3rem;
+    width: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: .8rem;
 }
 
-#post-panel.update button.update,#post-panel.update button.cancel{
-    float: left;
-    width: 50%;
+.box6{
+    position: relative;
+    background-color: #f8f8f8;
+    height: 30vh;
 }
 
-#post-panel.update button.delete{
-    width: 100%;
+.box6 .subtitle{
+    color: #c0c0c0;
+    letter-spacing: 2px;
+    font-size: .8rem;
+}
+.box6 .title{
+    color: #535353;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
 }
 
-#post-panel button.create,#post-panel button.update{
-    background-color: rgb(59, 212, 148);
+.box6 .shopNow a{
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    color: #c0c0c0;
+    font-size: .8rem;
+}
+.box6 .shopNow i{
+    border-radius: 50%;
+    border: 1px solid #c0c0c0;
+    height: 1.3rem;
+    width: 1.3rem;
+    text-align: center;
+    line-height: 1.5;
+    font-size: .8rem;
 }
 
-#post-panel button.delete{
-    background-color: rgb(255, 89, 125);
+.box7 {
+    height: 50vh;
+    position: relative;
+}
+.box7 .subtitle{
+    color: #535353;
+    letter-spacing: 1px;
+}
+.box7 .title{
+    color: #535353;
+}
+.box7 p{
+    color: #535353;
+    font-size: 0.8rem;
+}
+
+
+.carousel-item img{
+    height: 50vh ;
+
+}
+ol.carousel-indicators{
+    justify-content: start;
+    margin-left: 1rem;
+}
+
+
+ol.carousel-indicators li{
+    border-radius: 50%;
+    border: 1px solid rgb(124, 124, 124);
+    height: .5rem;
+    width: .5rem;
+    margin: 1px;    
+}
+
+.carousel-caption{
+    top: 0;
+    left: 1rem;
+    text-align: left;
 }
