@@ -5,14 +5,16 @@ black fontcolor 000
 gray font color 
 box bgcolor #4c4c4c
 */
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
 
+}
 
 a:hover {
     text-decoration: none;
 }
 
-.header-contact,
-.header-member {
+#header-info{
     background-color: #282828;
     color: #939393;
     cursor: pointer;
@@ -32,7 +34,7 @@ a:hover {
     background-color: #3f3e43;
 }
 
-.header-contact,
+.header-contact a,
 .header-member a {
     color: #939393;
 }
@@ -43,10 +45,12 @@ a:hover {
     }
 }
 
+/*boxtop*/
+
 .box1,.box2 {
     background-color: #4c4c4c;
     color: rgb(255, 255, 255);
-    height: 50vh;
+    height: 40vh;
 }
 .gry-tag{
     background-color: #535353;
@@ -98,13 +102,13 @@ a:hover {
 .box3{
     background-color: #f3f3f3;
     position: relative;
-    height: 25vh;
+    height: 20vh;
 }
 
 .box4{
     background-color: #f3f3f3;
     position: relative;
-    height: calc(25vh - .25rem);
+    height: calc(20vh - .25rem);
 }
 .box3 .title{
     color: #939393;
@@ -198,7 +202,7 @@ a:hover {
 .box6{
     position: relative;
     background-color: #f8f8f8;
-    height: 30vh;
+    height: 20vh;
 }
 
 .box6 .subtitle{
@@ -230,7 +234,7 @@ a:hover {
 }
 
 .box7 {
-    height: 50vh;
+    height: 40vh;
     position: relative;
 }
 .box7 .subtitle{
@@ -269,3 +273,270 @@ ol.carousel-indicators li{
     left: 1rem;
     text-align: left;
 }
+
+div.category:nth-child(1):after,div.category:nth-child(2):after{
+    content: "|";
+    padding: 0 .3rem;
+    font-weight: normal;
+}
+
+.products-filter{
+    color: #838182;
+}
+
+.products-filter .active{
+    color: #3a3a3a;
+}
+
+.controls{
+    background-color: rgb(218, 218, 218);
+    height: 1.2rem;
+    width: 3rem;
+
+}
+
+.prev,.next{
+color: #fff;
+line-height: 1.3;
+}
+
+ul.products{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li.product{
+    position: relative;
+    background-color: rgb(231, 231, 231);
+    height: 40vh;
+    width: 80vw;
+    margin: 0 auto;
+}
+.product-info{
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.product-name{
+    color: #747474;
+}
+.banners .row .col-12:nth-child(2n+1) .banner{
+    position: relative;
+    background-color: #f8f8f8;
+    height: 25vh;
+    margin-bottom: 1rem;
+}
+
+.banners .row .col-12:nth-child(2) .banner{
+    position: relative;
+    background-color: #f1f1f1;
+    height: 25vh;
+    margin-bottom: 1rem;
+}
+
+.banner-subtitle{
+    color: rgb(184, 184, 184);
+    letter-spacing: 2px;
+}
+.banner-title{
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+}
+
+.banners .col-12{
+    position: relative;
+}
+.banner-view{
+    cursor: pointer;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: rgb(151, 151, 151);
+    font-size: .6rem;
+    letter-spacing: 1px;
+}
+
+.banners i{
+    border-radius: 50%;
+    border: 1px solid rgb(151, 151, 151);
+    width: 1rem;
+    height: 1rem;
+    padding-left: .1rem;
+    text-align: center;
+    line-height: 1.2;
+    
+}
+.saleOff{
+    position: absolute;
+    display: inline-block;
+    background-color: #b2cc29;
+    color: rgb(255, 255, 255);
+    padding: .2rem .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    top: 1rem;
+}
+.newTag{
+    position: absolute;
+    display: inline-block;
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: .2rem .5rem;
+    font-weight: bold;
+    cursor: pointer;
+    top: 3rem;
+}
+
+.userPanel{
+    position: absolute;
+    bottom: 0;
+    background-color: #fff;
+
+}
+
+.addCart,.like,.preview{
+    border: 1px solid rgb(216, 216, 216);
+    text-align: center;
+    color: rgb(121, 121, 121);
+}
+
+.co-brands-title{
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+}
+.co-brands-subtitle{
+    color: rgb(163, 163, 163);
+}
+#footer{
+    background-color: #f6f6f6;
+}
+
+#footer-top-supports span.icon{
+    font-size:2rem;
+    color: #838182;
+    
+}
+.fa-plane{
+    transform: rotate(-0.125turn);
+}
+.support-title,.support-subtitle{
+    color: #353535;
+    padding-left: 1rem;
+    
+}
+.support-title{
+    text-transform: uppercase;
+    font-size: .3rem;
+}
+.support-subtitle{
+    font-size: .1rem;
+}
+
+.support-subtitle:first-letter{
+    text-transform:uppercase;
+}
+
+#footer-top-infos,#footer-top-infos a{
+    color: #a0a0a0;
+}
+
+.links .title{
+    color: #575757;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+#footer-top-infos ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links .categories li,.links .infomation li,
+.links .accounts li{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.subscribes .title{
+    color: #575757;
+    font-weight: bold;
+}
+.emailHere{
+    background-color: rgb(255, 255, 255);
+    color: #696969;
+    height: 5vh;
+    text-transform: capitalize;
+    font-weight: bold;
+
+    border: none;
+    border-top-left-radius:50px;
+    border-bottom-left-radius: 50px;
+
+}
+
+.subbtn{
+    background-color: #696969;
+    color: #dfdfdf;  
+    height: 5vh;
+    text-transform: capitalize;
+    font-weight: bold;
+    
+    border: none;
+    border-top-right-radius:50px;
+    border-bottom-right-radius: 50px;
+
+}
+
+.socialMediaList{
+    font-size: 1.5rem;
+}
+#footer-bottom{
+    background-color: #fff;
+}
+
+/* @media (max-width:425px) {
+
+    #footer-bottom .copyright,#footer-bottom .pays{
+        display: flex;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+}    
+
+@media (max-width:576px) {
+   
+    #footer-bottom .copyright,#footer-bottom .pays{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+}    
+
+@media (max-width:768px) {
+   
+    #footer-bottom .copyright,#footer-bottom .pays{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+}   
+
+@media (max-width:992px) {
+   
+    #footer-bottom .copyright,#footer-bottom .pays{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+}   
+
+@media (max-width:1200px) {
+   
+    #footer-bottom .copyright,#footer-bottom .pays{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+    }
+}   */
