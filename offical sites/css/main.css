@@ -6,6 +6,10 @@ gray font color
 box bgcolor #4c4c4c
 */
 
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 a:hover {
     text-decoration: none;
@@ -14,7 +18,6 @@ a:hover {
 #header-info {
     background-color: #282828;
     color: #939393;
-    cursor: pointer;
 }
 
 .header-tele,
@@ -46,32 +49,91 @@ a:hover {
     color: #939393;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+
 @media (max-width:425px) {
     .form-control {
         width: 85%;
     }
 }
 
+
 #nav li:hover,
-#nav .btn_search:hover {
+#nav .btn_search:hover,
+.btn-lg_search:hover,
+.btn-lg_fav:hover,
+.basket:hover,
+.nav-tele a:hover {
     background-color: rgb(238, 238, 238);
+}
+
+.nav-tele a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+
+#nav .btn,
+.basket {
+    padding: .5rem 1rem;
+}
+
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0rem rgb(255, 255, 255);
 }
 
 #nav {
     font-size: 1rem;
 }
 
-.input_search{
-    height: 100%;
-}
 
-.btn-lg_search{
+.btn-lg_search,
+.btn-lg_fav,
+.basket .icon {
     font-size: 1.5rem;
-    margin: 0 1rem;
+    position: relative;
 }
 
+.basket {
+    cursor: pointer;
+}
+
+.basket-title {
+    font-size: .8rem;
+}
+
+.basket-items {
+    font-size: .6rem;
+}
+
+.basket-less .basket_qty {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 2px 7px;
+    font-size: 1px;
+    box-shadow: 0px 0px 0px 2px #ffffff;
+    position: absolute;
+    bottom: -10%;
+    right: -50%;
+    text-align: center;
+
+}
 
 /*boxtop*/
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+    cursor: pointer;
+}
+
+
 
 .box1,
 .box2 {
@@ -114,7 +176,7 @@ a:hover {
 
 .circle {
     position: absolute;
-    bottom:25%;
+    bottom: 25%;
     right: 1rem;
     background-color: #62c5de;
     width: 7rem;
@@ -216,11 +278,11 @@ a:hover {
 }
 
 
-    .box4 .shopNow {
-        position: absolute;
-        bottom: 1rem;
-        left: 1.5rem;
-    }
+.box4 .shopNow {
+    position: absolute;
+    bottom: 1rem;
+    left: 1.5rem;
+}
 
 
 
@@ -372,22 +434,39 @@ ol.carousel-indicators li {
     text-align: left;
 }
 
-
 div.category:nth-child(1):after,
-div.category:nth-child(2):after {
+div.category:nth-child(3):before {
     content: "|";
     padding: 0 .3rem;
-    font-weight: normal;
+    font-weight: 100;
 }
 
-.products-filter,.filter-title {
+@media(min-width:768px) {
+
+    div.category:nth-child(1):after,
+    div.category:nth-child(3):before {
+        content: "|";
+        padding: 0 1rem;
+        font-weight: 100;
+    }
+
+}
+
+
+.products-filter .category a {
     color: #838182;
     font-size: .8rem;
 }
 
-.products-filter .active {
+.products-filter .category.active a {
     color: #3a3a3a;
 }
+
+.filter-title {
+    color: #3a3a3a;
+    font-size: .8rem;
+}
+
 
 .controls {
     background-color: rgb(218, 218, 218);
@@ -412,12 +491,12 @@ li.product {
     position: relative;
     background-color: #ececec;
     height: 30vh;
-    width:  100%;
+    width: 100%;
     margin: 0 auto;
 }
 
 .product-info {
-    margin: 0 auto;
+    margin-top: 1rem;
     width: 100%;
 }
 
@@ -500,19 +579,19 @@ li.product {
 .userPanel1 {
     position: absolute;
     bottom: 0;
-   
+
     width: 100%;
     display: grid;
     grid-template-columns: 5fr 1fr 1fr;
     grid-gap: 1px;
     border: 1px solid rgb(231, 231, 231);
-    
+
 }
 
 .userPanel2 {
     position: absolute;
     bottom: 1rem;
-   
+
     width: 80%;
     display: flex;
     justify-content: space-around;
@@ -520,10 +599,10 @@ li.product {
 
     border: 1px solid rgb(231, 231, 231);
     background-color: #fff;
-    box-shadow:0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
     text-align: center;
     color: rgb(121, 121, 121);
-    padding: .5rem;   
+    padding: .5rem;
 }
 
 .userPanel1 .addCart,
@@ -597,7 +676,7 @@ li.product {
 
 #footer-top-infos a:hover {
     color: #616161;
-    
+
 }
 
 .links .title {
@@ -655,9 +734,9 @@ li.product {
     font-size: 1.5rem;
 }
 
-@media(min-width:768px){
-    .socialMediaList ul li{
-    margin-left: 1rem;        
+@media(min-width:768px) {
+    .socialMediaList ul li {
+        margin-left: 1rem;
     }
 
 }
@@ -668,47 +747,189 @@ li.product {
     background-color: #fff;
 }
 
-/* @media (max-width:425px) {
 
-    #footer-bottom .copyright,#footer-bottom .pays{
-        display: flex;
-        justify-content: center;
-        margin: 1rem 0;
-    }
-}    
 
-@media (max-width:576px) {
-   
-    #footer-bottom .copyright,#footer-bottom .pays{
-        display: flex;
-        justify-content: space-between;
-        margin: 1rem 0;
-    }
-}    
+/*about us*/
 
-@media (max-width:768px) {
-   
-    #footer-bottom .copyright,#footer-bottom .pays{
-        display: flex;
-        justify-content: space-between;
-        margin: 1rem 0;
-    }
-}   
+.about-header {
+    height: 30vh;
+    background-color: #f4f4f4;
+    color: #494949;
+}
 
-@media (max-width:992px) {
-   
-    #footer-bottom .copyright,#footer-bottom .pays{
-        display: flex;
-        justify-content: space-between;
-        margin: 1rem 0;
-    }
-}   
+.breadcrumb-title {
+    font-weight: bolder;
+    font-size: 3rem;
+}
 
-@media (max-width:1200px) {
-   
-    #footer-bottom .copyright,#footer-bottom .pays{
-        display: flex;
-        justify-content: space-between;
-        margin: 1rem 0;
+.breadcrumb-subtitle span {
+    padding: 0 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.whoWeAre {
+    color: #494949;
+}
+
+.whoWeAre .content p {
+    font-size: 1.1rem;
+}
+
+
+.whoWeAre .socialMediaList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.whoWeAre .socialMediaList ul a {
+    color: #494949;
+    padding-right: 0;
+}
+
+@media(min-width:768px) {
+    .whoWeAre .socialMediaList ul a {
+
+        padding-right: 1rem;
     }
-}   */
+}
+
+.whoWeAre .socialMediaList ul a:hover {
+    color: #868686;
+
+}
+
+@media (min-width: 768px) {
+    div.whoWeAre .socialMediaList ul li {
+        margin-left: 0;
+    }
+}
+
+.ourTeam-title {
+    color: #494949
+}
+
+
+ul.ourTeams {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+li.ourTeam {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+
+}
+
+
+li.ourTeam img {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.outTeam {
+    position: relative;
+}
+
+.team-socialMedia {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+ul.ourTeams:nth-child(1) .cover,
+ul.ourTeams:nth-child(2) .cover {
+    background-color: #f0f0f0;
+}
+
+
+.ourTeam .cover {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+ul.ourTeams:nth-child(1) .team-socialMedia,
+ul.ourTeams:nth-child(2) .team-socialMedia {
+    display: none;
+}
+
+ul.ourTeams:nth-child(3) .team-socialMedia {
+    display: block;
+}
+
+
+.team-socialMedia ul {
+    list-style: none;
+}
+
+.team-socialMedia a {
+    display: inline-block;
+    border-radius: 99em;
+    color: rgb(255, 255, 255);
+    background-color: #515151;
+    margin: 0 .5rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+}
+
+.team-socialMedia a:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.ourTeam-info {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.ourTeam-info .decoration {
+    background-color: #eeeeee;
+    padding-left: 3%;
+    margin-right: .5rem;
+}
+
+.ourTeam-info .name {
+    font-size: 1rem;
+}
+
+.ourTeam-info .jobTitle {
+    font-size: .5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #a0a0a0;
+}
+
+.hire {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #adadad;
+}
+
+.about-emailHere.form-control.emailHere{
+    border: 1px solid #000;
+    border-right: none;
+    font-weight: normal;
+}
+
+.about-subbtn {
+    background-color: #ffffff;
+    color: #a5a0a0;
+    border: 1px solid #000;
+    border-left: none;
+}
