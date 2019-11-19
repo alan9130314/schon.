@@ -49,6 +49,10 @@ a:hover {
     color: #939393;
 }
 
+.bg-light {
+    background-color: #ffffff!important;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: rgb(0, 0, 0);
 }
@@ -139,19 +143,19 @@ a:hover {
 .box2 {
     background-color: #4c4c4c;
     color: rgb(255, 255, 255);
-    height: 50vh;
+    height: 60vh;
 }
 
 .box3 {
     background-color: #f3f3f3;
     position: relative;
-    height: calc(25vh);
+    height: calc(30vh);
 }
 
 .box4 {
     background-color: #f3f3f3;
     position: relative;
-    height: calc(25vh - .25rem);
+    height: calc(30vh - .25rem);
 }
 
 .gry-tag {
@@ -304,18 +308,18 @@ a:hover {
 .box5 {
     position: relative;
     background-color: #d0e9b0;
-    height: 16.66vh;
+    height: 20vh;
 }
 
 .box6 {
     position: relative;
     background-color: #f8f8f8;
-    height: calc(33.33vh - .25rem);
+    height: calc(40vh - .25rem);
 
 }
 
 .box7 {
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -411,7 +415,7 @@ a:hover {
 
 
 .carousel-item img {
-    height: 50vh;
+    height: 60vh;
 }
 
 ol.carousel-indicators {
