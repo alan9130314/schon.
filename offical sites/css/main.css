@@ -694,7 +694,10 @@ li.product {
 
 .links .categories li,
 .links .infomation li,
-.links .accounts li {
+.links .accounts li,
+.links .costomer li,
+.links .pages li,
+.links .socials li {
     margin-bottom: 1rem;
     text-transform: capitalize;
 }
@@ -844,30 +847,30 @@ li.ourTeam img {
 
 }
 
-ul.ourTeams:nth-child(1) .cover,
-ul.ourTeams:nth-child(2) .cover {
-    background-color: #f0f0f0;
-}
-
-
-.ourTeam .cover {
+.cover{
     position: absolute;
-    display: block;
+    background: rgba(255,255,255,.9);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: .3s linear all;
+}
+
+.cover:hover{
+    opacity: 1;
+}
+.cover .team-socialMedia{
+    position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    color: #333;
 }
 
-ul.ourTeams:nth-child(1) .team-socialMedia,
-ul.ourTeams:nth-child(2) .team-socialMedia {
-    display: none;
-}
-
-ul.ourTeams:nth-child(3) .team-socialMedia {
-    display: block;
+.ourTeams:nth-child(3) .cover{
+    opacity: 1;
 }
 
 
@@ -887,9 +890,6 @@ ul.ourTeams:nth-child(3) .team-socialMedia {
     line-height: 2rem;
 }
 
-.team-socialMedia a:hover {
-    background-color: rgb(150, 150, 150);
-}
 
 .ourTeam-info {
     margin-top: 1rem;
@@ -922,7 +922,7 @@ ul.ourTeams:nth-child(3) .team-socialMedia {
 }
 
 .about-emailHere.form-control.emailHere{
-    border: 1px solid #000;
+    border: 1px solid rgb(100, 100, 100);
     border-right: none;
     font-weight: normal;
 }
@@ -930,6 +930,79 @@ ul.ourTeams:nth-child(3) .team-socialMedia {
 .about-subbtn {
     background-color: #ffffff;
     color: #a5a0a0;
-    border: 1px solid #000;
+    border: 1px solid rgb(100, 100, 100);
     border-left: none;
+}
+.outcenter{
+    background-color: rgb(255, 194, 194);
+}
+
+.center{
+    margin: 0 auto;
+}
+
+.center img{
+    margin: 0 1vw; 
+    width: 80vw;       
+}
+button.slick-prev:before, button.slick-next:before{
+    color: rgb(255, 255, 255);    
+}
+
+.center .slick-prev{
+    z-index: 999;
+    left: 1%;
+}
+.center .slick-next{
+    z-index: 999;
+    right: 1%;
+}
+
+
+
+/*contact us*/
+.contact-header {
+    height: 30vh;
+    background-image: url("../img/contact/header.png");
+    background-color: #f4f4f4;
+    color: #494949;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.breadcrumb-title {
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.breadcrumb-subtitle span {
+    padding: 0 1rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.contact-info h4.title,.contact-info h4.title .content{
+    text-transform: capitalize;
+}
+.contact-info .content{
+    color: #383838;
+}
+.contact-info a{
+    color: #383838;
+}
+
+.contact-info a:hover{
+    color: #5e5e5e;
+}
+
+.question textarea{
+    border-radius: 12px;
+}
+
+
+#footer.contact-footer {
+    background-color: rgb(255, 255, 255);
 }
