@@ -38,10 +38,11 @@
 
 <body>
     <div id="nav" class="">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light text-nowrap">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-nowrap p-3">
             <a class="navbar-brand" href="#"><img src="img\home\logo.png" alt="logo"></a>
-            <div class="nav-tele ml-1 d-none d-lg-block">
-                <a href="tel:+1-(555)-333-22-11"><span class="icon mr-1"><i class="fas fa-phone-alt"></i></span>+1
+            <div class="navbar-nav nav-tele ml-1 d-none d-lg-block">
+                <a class="nav-link" href="tel:+1-(555)-333-22-11"><span class="icon mr-1"><i
+                            class="fas fa-phone-alt"></i></span>+1
                     (555) 333 22 11</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -50,7 +51,7 @@
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-uppercase font-weight-bold">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-uppercase ">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">home</a>
                     </li>
@@ -84,16 +85,18 @@
                     </div>
                 </form>
 
-                <button class="btn border-0 btn-lg_search d-none d-lg-block py-md-1" type="button" id="btn_search">
+                <button class="nav-link align-self-stretch btn border-0 btn-lg_search d-none d-lg-block py-md-1 ml-lg-3"
+                    type="button" id="btn_search">
                     <i class=" fas fa-search "></i>
                 </button>
 
-                <button class="btn border-0 btn-lg_fav d-none d-lg-block py-md-1" type="button" id="btn_search">
+                <button class="nav-link align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1"
+                    type="button" id="btn_search">
                     <i class="far fa-heart"></i>
 
                 </button>
 
-                <div class="basket d-flex align-items-center d-lg-none px-0 py-md-1">
+                <div class="basket  d-flex align-items-center d-lg-none px-0 py-md-1 ">
                     <span class="icon mr-4"><i class="fas fa-shopping-basket"></i></span>
 
                     <div class="text-uppercase font-weight-bold">
@@ -103,7 +106,7 @@
                     </div>
                 </div>
 
-                <div class="basket align-items-center d-lg-flex d-none py-md-1">
+                <div class="basket nav-link align-self-stretch align-items-center d-lg-flex d-none py-md-1  ">
                     <span class="icon"><i class="fas fa-shopping-basket "></i>
                         <div class="basket-less text-uppercase font-weight-bold ">
                             <span class="basket_qty rounded-circle">3</span>
@@ -130,7 +133,7 @@
     <section class="contact-info mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-7">
+                <div class="col-12 col-md-7 mr-auto">
                     <h3 class="title">
                         schön. chair maker
                     </h3>
@@ -139,8 +142,8 @@
                         labore unde placeat, deleniti impedit sed hic excepturi veniam commodi molestias delectus cum
                         ipsum iusto ipsam esse?
                     </div>
-                    <div class="row mt-5">
-                        <div class="col">
+                    <div class="row ">
+                        <div class="col mt-5">
                             <h4 class="title">
                                 address
                             </h4>
@@ -148,7 +151,7 @@
                                 Suite 18B, 148 Connaught Road Central New Yankee
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mt-5">
                             <h4 class="title">
                                 phone
                             </h4>
@@ -158,7 +161,7 @@
                                     (555) 333 22 11</a>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col mt-5">
                             <h4 class="title">
                                 e-mail
                             </h4>
@@ -168,10 +171,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-5  question mt-5 mt-md-0">
-                    <h3 class="title">
+                <div class="col-12 col-md-4  question mt-5 mt-md-0">
+                    <h5 class="title">
                         Have a question?
-                    </h3>
+                    </h5>
                     <form>
                         <div class="form-row">
                             <div class="form-group col-12">
@@ -216,12 +219,12 @@
         <div id="footer-top-infos" class="pt-5">
 
             <div class="container">
-                <div class="d-md-flex justify-content-md-between ">
+                <div class="d-md-flex justify-content-between ">
 
 
-                    <div class="links  mb-5">
-                        <div class="d-md-flex justify-content-md-between">
-                            <div class="mr-5">
+                    <div class="links  mb-5 d-none d-sm-block">
+                        <div class="d-flex justify-content-between">
+                            <div class="contact-mr">
                                 <div class="title mb-4 ">categories</div>
                                 <ul class="categories">
                                     <li><a href="#">all</a></li>
@@ -233,17 +236,15 @@
                                     <li><a href="#">new</a></li>
                                 </ul>
                             </div>
-                            <div class="mr-5">
+                            <div class="contact-mr">
                                 <div class="title">costomer</div>
                                 <ul class="costomer">
                                     <li><a href="#">FAQs</a></li>
                                     <li><a href="#">support</a></li>
                                     <li><a href="#">repair center</a></li>
-
                                 </ul>
                             </div>
-
-                            <div class="mr-5">
+                            <div class="contact-mr">
                                 <div class="title">pages</div>
                                 <ul class="pages">
                                     <li><a href="#">home</a></li>
@@ -253,7 +254,7 @@
                                     <li><a href="#">terms</a></li>
                                 </ul>
                             </div>
-                            <div class="mr-5">
+                            <div class="contact-mr">
                                 <div class="title">socials</div>
                                 <ul class="socials">
                                     <li><a href="#">twitter</a></li>
@@ -267,9 +268,59 @@
                         </div>
                     </div>
 
+                    <div class="links  mb-5  d-block d-sm-none">
+                        <div class="row">
+                            <div class="col"><div class="contact-mr">
+                                    <div class="title mb-4 ">categories</div>
+                                    <ul class="categories">
+                                        <li><a href="#">all</a></li>
+                                        <li><a href="#">chairs</a></li>
+                                        <li><a href="#">sofas</a></li>
+                                        <li><a href="#">living</a></li>
+                                        <li><a href="#">bedroom</a></li>
+                                        <li><a href="#">tables</a></li>
+                                        <li><a href="#">new</a></li>
+                                    </ul>
+                                </div></div>
+                            <div class="col"><div class="contact-mr">
+                                    <div class="title">costomer</div>
+                                    <ul class="costomer">
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">support</a></li>
+                                        <li><a href="#">repair center</a></li>
+                                    </ul>
+                                </div></div>
+                            <div class="col"> <div class="contact-mr">
+                                    <div class="title">pages</div>
+                                    <ul class="pages">
+                                        <li><a href="#">home</a></li>
+                                        <li><a href="#">contact</a></li>
+                                        <li><a href="#">product</a></li>
+                                        <li><a href="#">about</a></li>
+                                        <li><a href="#">terms</a></li>
+                                    </ul>
+                                </div></div>
+                            <div class="col"> <div class="contact-mr">
+                                    <div class="title">socials</div>
+                                    <ul class="socials">
+                                        <li><a href="#">twitter</a></li>
+                                        <li><a href="#">facebook</a></li>
+                                        <li><a href="#">google+</a></li>
+                                        <li><a href="#">pinterest</a></li>
+        
+                                    </ul>
+                                </div></div>
+                        </div>
+                        
+                        
+                       
+                       
+                            
+                    </div>
+
                     <div class="info  mb-5 d-block text-md-right">
                         <img src="img\contact\logo_blk.png" alt="logo">
-                        
+
                         <div class="location mt-4">
                             <a href="#"><span class="icon"><i class="fas fa-map-marker-alt mr-2"></i></span>Connaugt
                                 Road Central Suite 18B, 148
@@ -289,7 +340,7 @@
 
 
 
-                    
+
                 </div>
             </div>
         </div>
@@ -303,7 +354,7 @@
                         </div>
                     </div>
                     <div class="copyright mt-3">
-                            Copyright shön. All right recerved
+                        Copyright shön. All right recerved
                     </div>
                 </div>
 
