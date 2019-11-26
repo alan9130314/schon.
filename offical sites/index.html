@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
     <script src="js/jquery-3.4.1.min.js"></script>
@@ -24,27 +27,47 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <title>Home</title>
 </head>
 
 <body>
-
     <div id="header-info">
-        <div class="container d-flex justify-content-between">
-            
-                <div class="header-contact ">
-                    <a class="header-tele " href="tel:+1-(555)-333-22-11"><span class="icon mr-1"><i
-                                class="fas fa-phone-alt"></i></span>+1
-                        (555) 333 22 11</a>
-                    <a class="header-email" href="mailto:info@schon.chairs"><span class="icon mr-1"><i
-                                class="far fa-envelope"></i></span>info@schon.chairs</a>
+        <div class="container ">
+            <div class=" d-md-flex justify-content-between align-items-center">
+                <div class="header-contact  d-none d-md-flex justify-content-md-start ">
+                    <div class="header-tele">
+                        <a class=" " href="tel:+1-(555)-333-22-11"><span class="icon mr-1"><i
+                                    class="fas fa-phone-alt"></i></span>+1
+                            (555) 333 22 11</a>
+                    </div>
+                    <div class="header-email">
+                        <a class="header-email" href="mailto:info@schon.chairs"><span class="icon mr-1"><i
+                                    class="far fa-envelope"></i></span>info@schon.chairs</a>
+
+                    </div>
                 </div>
                 <div class="header-member">
-                    <a class="header-orderTrack" href="#">order track</a>
-                    <a class="header-myAcc" href="#">my account</a>
-                    <a class="header-checkOut" href="#">checkout</a>
+                    <div class="d-flex justify-content-between ">
+                        <div class="header-orderTrack">
+                            <a class="" href="#">order track</a>
+
+                        </div>
+                        <div class="header-myAcc">
+                            <a class="" href="#">my account</a>
+
+                        </div>
+                        <div class="header-checkOut">
+                            <a class="" href="#">checkout</a>
+
+                        </div>
+
+                    </div>
                 </div>
+
+            </div>
+
 
         </div>
     </div>
@@ -272,7 +295,7 @@
                 <div class="col-12 col-md-7 pl-md-1">
                     <div class="box7 slider mt-1 mt-md-0">
                         <div class="bd-example">
-                            <div id="carouselExampleCaptions" class="carousel slide  h-100">
+                            <div id="carouselExampleCaptions" class="carousel slide  h-100" data-ride="carousel">
                                 <ol class="carousel-indicators">
                                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active">
                                     </li>
@@ -345,8 +368,7 @@
         </div>
 
     </section>
-
-    <section class="carousel mt-5">
+    <section id="carousel-filter" class="carousel mt-5">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="products-filter text-uppercase font-weight-bold d-flex">
@@ -355,16 +377,143 @@
                     <div class="category"><a href="#">best seller</a></div>
                 </div>
                 <div class="controls d-flex justify-content-around rounded-pill align-items-center">
-                    <span class="prev icon"><i class="fas fa-chevron-circle-left"></i></span>
+                    <button class="prev icon sli-prev"><i class="fas fa-chevron-circle-left"></i></button>
 
-                    <span class="next icon"><i class="fas fa-chevron-circle-right"></i></span>
+                    <button class="next icon sli-next"><i class="fas fa-chevron-circle-right"></i></button>
                 </div>
             </div>
-
             <div class="row mt-3">
+                <div class="col-12 d-block">
+                    <ul class="products">
+                        <div class="row carousel-filter">
+                            <div class="col">
+                                <li class="product product-1">
+                                    <img src="" alt="">
+                                </li>
+                                <div class="product-info ">
+
+                                    <span class="newTag">
+                                        NEW
+                                    </span>
+                                    <div class="rating text-left">
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="product-name font-weight-bold">
+                                        <p>Bombi Chair</p>
+                                    </div>
+                                    <div class="product-price mt-n3">
+                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
+                                                    class="fas fa-euro-sign"></i></span>399,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <li class="product product-2">
+                                    <img src="" alt="">
+                                </li>
+                                <div class="product-info ">
+
+                                    <div class="rating text-left invisible">
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="product-name font-weight-bold">
+                                        <p>Marvelous Modern 3 Seater</p>
+                                    </div>
+                                    <div class="product-price mt-n3">
+                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
+                                                    class="fas fa-euro-sign"></i></span>599,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <li class="product product-3">
+                                    <img src="" alt="">
+                                </li>
+                                <div class="product-info ">
+                                    <span class="saleOff">
+                                        15% Off
+                                    </span>
+                                    <span class="newTag">
+                                        NEW
+                                    </span>
+                                    <div class="rating text-left ">
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="product-name font-weight-bold">
+                                        <p>Chair with armrests</p>
+                                    </div>
+                                    <div class="product-price mt-n3">
+                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
+                                                    class="fas fa-euro-sign"></i></span>200,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <li class="product product-4">
+                                    <img src="" alt="">
+                                </li>
+                                <div class="product-info ">
+
+                                    <div class="rating text-left invisible">
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="far fa-star"></i></span>
+                                    </div>
+                                    <div class="product-name font-weight-bold">
+                                        <p>Bombi Chair</p>
+                                    </div>
+                                    <div class="product-price mt-n3">
+                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
+                                                    class="fas fa-euro-sign"></i></span>399,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                    <li class="product product-3">
+                                        <img src="" alt="">
+                                    </li>
+                                    <div class="product-info ">
+                                        <span class="saleOff">
+                                            15% Off
+                                        </span>
+                                        <span class="newTag">
+                                            NEW
+                                        </span>
+                                        <div class="rating text-left ">
+                                            <span class="icon"><i class="fas fa-star"></i></span>
+                                            <span class="icon"><i class="fas fa-star"></i></span>
+                                            <span class="icon"><i class="fas fa-star"></i></span>
+                                            <span class="icon"><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="product-name font-weight-bold">
+                                            <p>Chair with armrests</p>
+                                        </div>
+                                        <div class="product-price mt-n3">
+                                            <p class="font-weight-bold"><span class="icon mr-1 "><i
+                                                        class="fas fa-euro-sign"></i></span>200,00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row mt-3 d-none">
                 <div class="col-12 d-block d-md-none">
                     <ul class="products">
-                        <li class="product">
+                        <li class="product product-1">
                             <img src="" alt="">
                         </li>
                         <div class="product-info">
@@ -395,7 +544,7 @@
                     <ul class="products">
                         <div class="row">
                             <div class="col-md-6">
-                                <li class="product">
+                                <li class="product product-1">
                                     <img src="" alt="">
                                 </li>
                                 <div class="product-info">
@@ -421,7 +570,7 @@
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <li class="product">
+                                <li class="product product-2">
                                     <img src="" alt="">
                                 </li>
                                 <div class="product-info ">
@@ -450,7 +599,7 @@
                     <ul class="products">
                         <div class="row">
                             <div class="col-md-3">
-                                <li class="product">
+                                <li class="product product-1">
                                     <img src="" alt="">
                                 </li>
                                 <div class="product-info ">
@@ -474,7 +623,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <li class="product">
+                                <li class="product product-2">
                                     <img src="" alt="">
                                 </li>
                                 <div class="product-info ">
@@ -495,7 +644,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <li class="product">
+                                <li class="product product-3">
                                     <img src="" alt="">
                                 </li>
                                 <div class="product-info ">
@@ -521,7 +670,7 @@
                                 </div>
                             </div>
                             <div class="col-md-3">
-                                <li class="product">
+                                <li class="product product-4">
                                     <img src="" alt="">
                                 </li>
                                 <div class="product-info ">
@@ -548,9 +697,9 @@
                 </div>
 
             </div>
+
         </div>
     </section>
-
     <section class="banners mt-5">
         <div class="container d-md-flex">
             <div class="banner p-4 ">
@@ -609,95 +758,83 @@
 
     </section>
 
-
-
-    <section class="carousel mt-5">
+    <section id="carousel-bestSeller" class=" mt-5">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="filter-title text-uppercase font-weight-bold d-flex">
                     best seller
                 </div>
                 <div class="controls d-flex justify-content-around rounded-pill align-items-center">
-                    <span class="prev icon"><i class="fas fa-chevron-circle-left"></i></span>
+                    <button class="prev icon sl-prev"><i class="fas fa-chevron-circle-left"></i></button>
 
-                    <span class="next icon"><i class="fas fa-chevron-circle-right"></i></span>
+                    <button class="next icon sl-next"><i class="fas fa-chevron-circle-right"></i></button>
                 </div>
             </div>
 
             <div class="row mt-3">
-                <div class="col-12 d-block d-md-none">
+                <div class="col-12  d-block">
                     <ul class="products">
-                        <li class="product d-flex justify-content-around">
-                            <div class="userPanel1 w-75">
-                                <div class="addCart py-2 text-capitalize">
-                                    <i class="fas fa-shopping-basket mr-1"></i>
-                                    add to cart
-                                </div>
-                                <div class="like py-2 ">
-                                    <i class="far fa-heart"></i>
-                                </div>
-                                <div class="preview py-2">
-                                    <i class="fas fa-exchange-alt"></i>
-                                </div>
-                            </div>
-                        </li>
-
-                        <div class="product-info ">
-                            <span class="saleOff">
-                                15% Off
-                            </span>
-                            <span class="newTag">
-                                NEW
-                            </span>
-                            <div class="rating text-left">
-                                <span class="icon"><i class="fas fa-star"></i></span>
-                                <span class="icon"><i class="fas fa-star"></i></span>
-                                <span class="icon"><i class="fas fa-star"></i></span>
-                                <span class="icon"><i class="far fa-star"></i></span>
-                            </div>
-                            <div class="product-name font-weight-bold">
-                                <p>Bombi Chair</p>
-                            </div>
-                            <div class="product-price mt-n3">
-                                <p class="font-weight-bold"><span class="icon mr-1 "><i
-                                            class="fas fa-euro-sign"></i></span>399,00</p>
-                            </div>
-                        </div>
-
-                    </ul>
-                </div>
-
-                <div class="col-12 d-none d-md-block d-lg-none">
-                    <ul class="products">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <li class="product">
-                                    <div class="userPanel1">
-                                        <div class="addCart py-2 text-capitalize">
-                                            <i class="fas fa-shopping-basket mr-1"></i>
-                                            add to cart
-                                        </div>
-                                        <div class="like py-2 ">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                        <div class="preview py-2">
-                                            <i class="fas fa-exchange-alt"></i>
+                        <div class="row carousel-bestSeller">
+                            <div class="col">
+                                <li class="product product-1">
+                                    <div class="panel-cover">
+                                        <div class="userPanel2">
+                                            <div class="addCart text-capitalize">
+                                                <i class="fas fa-shopping-basket mr-1"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="like ">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="preview">
+                                                <i class="far fa-eye "></i>
+                                            </div>
                                         </div>
                                     </div>
-                                </li>
-                                <div class="product-info ">
-                                    <span class="saleOff">
-                                        15% Off
-                                    </span>
-                                    <span class="newTag">
-                                        NEW
-                                    </span>
-                                    <div class="rating text-left">
+                                    <div class="rating text-left ">
                                         <span class="icon"><i class="fas fa-star"></i></span>
                                         <span class="icon"><i class="fas fa-star"></i></span>
                                         <span class="icon"><i class="fas fa-star"></i></span>
                                         <span class="icon"><i class="far fa-star"></i></span>
                                     </div>
+                                </li>
+                                <div class="product-info ">
+
+                                    <span class="newTag">
+                                        NEW
+                                    </span>
+
+                                    <div class="product-name font-weight-bold">
+                                        <p>Puff Chair</p>
+                                    </div>
+                                    <div class="product-price mt-n3">
+                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
+                                                    class="fas fa-euro-sign"></i></span>287,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <li class="product product-2">
+                                    <div class="panel-cover">
+                                        <div class="userPanel2">
+                                            <div class="addCart text-capitalize">
+                                                <i class="fas fa-shopping-basket mr-1"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="like ">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="preview">
+                                                <i class="far fa-eye "></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                                <div class="product-info ">
+
                                     <div class="product-name font-weight-bold">
                                         <p>Bombi Chair</p>
                                     </div>
@@ -707,19 +844,28 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <li class="product">
-                                    <img src="" alt="">
+                            <div class="col">
+                                <li class="product product-3">
+                                    <div class="panel-cover">
+                                        <div class="userPanel2">
+                                            <div class="addCart text-capitalize">
+                                                <i class="fas fa-shopping-basket mr-1"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="like ">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="preview">
+                                                <i class="far fa-eye "></i>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </li>
                                 <div class="product-info ">
-                                    <div class="rating text-left  invisible">
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                    </div>
                                     <div class="product-name font-weight-bold">
-                                        <p>Marvelous Modern 3 Seater</p>
+                                        <p>Wood Chair</p>
                                     </div>
                                     <div class="product-price mt-n3">
                                         <p class="font-weight-bold"><span class="icon mr-1 "><i
@@ -727,73 +873,24 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
-                    </ul>
-                </div>
-                <div class="col-12 d-none d-lg-block">
-                    <ul class="products">
-                        <div class="row">
-                            <div class="col-md-3">
-                                <li class="product">
-
-                                </li>
-                                <div class="product-info ">
-
-                                    <span class="newTag">
-                                        NEW
-                                    </span>
-                                    <div class="rating text-left ">
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                    </div>
-                                    <div class="product-name font-weight-bold">
-                                        <p>Bombi Chair</p>
-                                    </div>
-                                    <div class="product-price mt-n3">
-                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
-                                                    class="fas fa-euro-sign"></i></span>399,00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <li class="product">
-                                    <div class="userPanel1">
-                                        <div class="addCart py-2 text-capitalize">
-                                            <i class="fas fa-shopping-basket mr-1"></i>
-                                            add to cart
+                            <div class="col">
+                                <li class="product product-4">
+                                    <div class="panel-cover">
+                                        <div class="userPanel2">
+                                            <div class="addCart text-capitalize">
+                                                <i class="fas fa-shopping-basket mr-1"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="like ">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="preview">
+                                                <i class="far fa-eye "></i>
+                                            </div>
                                         </div>
-                                        <div class="like py-2 ">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                        <div class="preview py-2">
-                                            <i class="fas fa-exchange-alt"></i>
-                                        </div>
-                                    </div>
-                                </li>
-                                <div class="product-info ">
 
-                                    <div class="rating text-left invisible">
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
                                     </div>
-                                    <div class="product-name font-weight-bold">
-                                        <p>Marvelous Modern 3 Seater</p>
-                                    </div>
-                                    <div class="product-price mt-n3">
-                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
-                                                    class="fas fa-euro-sign"></i></span>599,00</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <li class="product">
-                                    <img src="" alt="">
                                 </li>
                                 <div class="product-info ">
                                     <span class="saleOff">
@@ -802,14 +899,9 @@
                                     <span class="newTag">
                                         NEW
                                     </span>
-                                    <div class="rating text-left ">
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                    </div>
+
                                     <div class="product-name font-weight-bold">
-                                        <p>Chair with armrests</p>
+                                        <p>Bombi Chair</p>
                                     </div>
                                     <div class="product-price mt-n3">
                                         <p class="font-weight-bold"><span class="icon mr-1 "><i
@@ -817,48 +909,83 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <li class="product d-flex justify-content-around">
-                                    <div class="userPanel2">
-                                        <div class="addCart text-capitalize">
-                                            <i class="fas fa-shopping-basket mr-1"></i>
+                            <div class="col">
+                                <li class="product product-5 d-flex justify-content-around">
+                                    <div class="panel-cover">
+                                        <div class="userPanel2">
+                                            <div class="addCart text-capitalize">
+                                                <i class="fas fa-shopping-basket mr-1"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="like ">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="preview">
+                                                <i class="far fa-eye "></i>
+                                            </div>
                                         </div>
-                                        <div>|</div>
-                                        <div class="like ">
-                                            <i class="far fa-heart"></i>
-                                        </div>
-                                        <div>|</div>
-                                        <div class="preview">
-                                            <i class="far fa-eye "></i>
-                                        </div>
+
                                     </div>
                                 </li>
                                 <div class="product-info ">
-
-                                    <div class="rating text-left  invisible">
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="fas fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                    </div>
                                     <div class="product-name font-weight-bold">
                                         <p>Bombi Chair</p>
                                     </div>
                                     <div class="product-price mt-n3">
                                         <p class="font-weight-bold"><span class="icon mr-1 "><i
-                                                    class="fas fa-euro-sign"></i></span>399,00</p>
+                                                    class="fas fa-euro-sign"></i></span>200,00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <li class="product product-3">
+                                    <div class="panel-cover">
+                                        <div class="userPanel2">
+                                            <div class="addCart text-capitalize">
+                                                <i class="fas fa-shopping-basket mr-1"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="like ">
+                                                <i class="far fa-heart"></i>
+                                            </div>
+                                            <div>|</div>
+                                            <div class="preview">
+                                                <i class="far fa-eye "></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rating text-left ">
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="fas fa-star"></i></span>
+                                        <span class="icon"><i class="far fa-star"></i></span>
+                                    </div>
+                                </li>
+                                <div class="product-info ">
+
+                                    <span class="newTag">
+                                        NEW
+                                    </span>
+
+                                    <div class="product-name font-weight-bold">
+                                        <p>Puff Chair</p>
+                                    </div>
+                                    <div class="product-price mt-n3">
+                                        <p class="font-weight-bold"><span class="icon mr-1 "><i
+                                                    class="fas fa-euro-sign"></i></span>287,00</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
                     </ul>
                 </div>
             </div>
         </div>
 
     </section>
+
+
 
     <section class="co-brands my-5">
         <div class="container">
@@ -1065,9 +1192,9 @@
             </div>
         </div>
 
-        <div id="footer-bottom" class="">
+        <div id="footer-bottom" class="py-5">
             <div class="container">
-                <div class="py-4 d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+                <div class=" d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
                     <div class="copyright">
                         © <span class="font-weight-bold">schön.</span> - All rights Reserved
                     </div>

@@ -18,18 +18,15 @@
     <script src="js/action.js"></script>
     <script src="https://kit.fontawesome.com/e7f5427ae7.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
 
-
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <title>About</title>
 </head>
@@ -40,7 +37,8 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light text-nowrap p-3">
             <a class="navbar-brand" href="#"><img src="img\home\logo.png" alt="logo"></a>
             <div class="navbar-nav nav-tele ml-1 d-none d-lg-block">
-                <a class=" nav-link" href=" tel:+1-(555)-333-22-11"><span class="icon mr-1"><i class="fas fa-phone-alt"></i></span>+1
+                <a class=" nav-link" href=" tel:+1-(555)-333-22-11"><span class="icon mr-1"><i
+                            class="fas fa-phone-alt"></i></span>+1
                     (555) 333 22 11</a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
@@ -83,11 +81,14 @@
                     </div>
                 </form>
 
-                <button class="nav-link align-self-stretch btn border-0 btn-lg_search d-none d-lg-block py-md-1  ml-lg-3" type="button" id="btn_search">
+                <button
+                    class="nav-link align-self-stretch btn border-0 btn-lg_search d-none d-lg-block py-md-1  ml-lg-3"
+                    type="button" id="btn_search">
                     <i class=" fas fa-search "></i>
                 </button>
 
-                <button class="nav-link align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1" type="button" id="btn_search">
+                <button class="nav-link align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1"
+                    type="button" id="btn_search">
                     <i class="far fa-heart"></i>
 
                 </button>
@@ -180,7 +181,7 @@
                 our team
             </h3>
             <div class="mt-3 row">
-                <ul class="ourTeams col-6 col-md-3">
+                <ul class="ourTeams col-6  col-md-3">
                     <li class="ourTeam">
                         <img class="img-fluid mx-auto" src="img\about\ourteam.png" alt="">
                         <div class="cover">
@@ -247,7 +248,7 @@
                         </div>
                     </div>
                 </ul>
-                <ul class="ourTeams col-6 col-md-3">
+                <ul class="ourTeams col-6  col-md-3">
                     <li class="ourTeam">
                         <img class="img-fluid mx-auto" src="img\about\ourteam.png" alt="">
                         <div class="cover">
@@ -267,7 +268,6 @@
                                 </ul>
                             </div>
                         </div>
-
                     </li>
                     <div class="ourTeam-info d-flex">
                         <span class="decoration"></span>
@@ -283,25 +283,14 @@
                 </ul>
                 <ul class="ourTeams col-6 col-md-3">
                     <li class="ourTeam">
-                        <img class="img-fluid mx-auto" src="img\about\hire.png" alt="">
-                        <div class="team-socialMedia ">
-                            <ul class="d-none justify-content-center">
-                                <li>
-                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                </li>
+                        <a href="#">
+                            <img class="img-fluid mx-auto" src="img\about\hire.png" alt="">
 
-                                <li>
-                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
+                            <h4 class="hire text-uppercase font-weight-bold">
+                                you?
+                            </h4>
 
-                            </ul>
-                        </div>
-                        <h4 class="hire text-uppercase font-weight-bold">
-                            you?
-                        </h4>
+                        </a>
                     </li>
                     <div class="ourTeam-info d-none">
                         <span class="decoration"></span>
@@ -320,7 +309,7 @@
 
     </section>
 
-    <section class="mt-5">
+    <section id="slick" class="mt-5">
         <div class="container">
             <div class="ourWorkSpace">
                 <h3 class="ourWorkSpace-title text-uppercase font-weight-bold">
@@ -328,18 +317,56 @@
                 </h3>
             </div>
         </div>
-        <div class="center mt-3">
-            <div>
-                <img src="http://placehold.it/1180x540?text=1">
+        <div class="works owl-carousel  owl-theme d-none d-md-block">
+            <div class="mb-3">
+                <div class="container-grid">
+                    <div class="work-1"></div>
+                    <div class="work-2"></div>
+                    <div class="work-3"></div>
+                    <div class="work-4"></div>
+                </div>
             </div>
-            <div>
-                <img src="http://placehold.it/1180x540?text=2">
+            <div class="mb-3">
+                <div class="container-grid">
+                    <div class="work-1"></div>
+                    <div class="work-2"></div>
+                    <div class="work-3"></div>
+                    <div class="work-4"></div>
+                </div>
             </div>
-            <div>
-                <img src="http://placehold.it/1180x540?text=3">
+            <div class="mb-3">
+                <div class="container-grid">
+                    <div class="work-1"></div>
+                    <div class="work-2"></div>
+                    <div class="work-3"></div>
+                    <div class="work-4"></div>
+                </div>
             </div>
         </div>
+
+        <div class="works-sm owl-carousel owl-theme d-block d-md-none">
+            <div class="work-1-sm"></div>
+            <div class="work-2-sm"></div>
+            <div class="work-3-sm"></div>
+            <div class="work-4-sm"></div>
+            <div class="work-1-sm"></div>
+            <div class="work-2-sm"></div>
+            <div class="work-3-sm"></div>
+            <div class="work-4-sm"></div>
+            <div class="work-1-sm"></div>
+            <div class="work-2-sm"></div>
+            <div class="work-3-sm"></div>
+            <div class="work-4-sm"></div>
+        </div>
     </section>
+
+
+
+
+
+
+
+
 
 
     <div id="footer" class="mt-5">
@@ -454,7 +481,7 @@
 
         <div id="footer-bottom" class="py-5">
             <div class="container">
-                <div class="d-flex justify-content-between align-items-center">
+                <div class=" d-flex justify-content-around justify-content-sm-between align-items-center flex-wrap">
                     <div class="copyright">
                         © <span class="font-weight-bold">schön.</span> - All rights Reserved
                     </div>
