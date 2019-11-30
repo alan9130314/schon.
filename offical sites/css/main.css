@@ -1897,6 +1897,10 @@ i.fas.fa-stream {
 
 /*blog full width css*/
 
+.card-body{
+    color: #494949;
+}
+
 .blogNavbar {
     background-color: #eeeeee;
     padding: .5rem 0;
