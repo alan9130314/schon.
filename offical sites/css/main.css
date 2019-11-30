@@ -2040,29 +2040,26 @@ i.fas.fa-stream {
 }
 
 .card-columns .postImg-1 {
-    background-color: rgb(65, 65, 65);
-    height: 25vh;
+    background-color: rgb(0, 0, 0);
+    height: 35vh;
     width: 100%;    
     background-image: url(https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
-    background-position: center;
-    
+    background-position: center;    
 }
 .card-columns .postImg-2 {
-    background-color: rgb(139, 139, 139);
-    height: 20vh;
+    background-color: rgb(71, 71, 71);
+    height: 30vh;
     width: 100%;
-
     background-image: url(https://images.unsplash.com/photo-1558603668-6570496b66f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
 }
 
 .card-columns .postImg-3 {
-    background-color: rgb(168, 168, 168);
-    height: 20vh;
+    background-color: rgb(163, 163, 163);
+    height: 30vh;
     width: 100%;
-
     background-image: url(https://images.unsplash.com/photo-1564320382348-c06ae02a3897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
@@ -2070,9 +2067,8 @@ i.fas.fa-stream {
 
 .card-columns .postImg-4 {
     background-color: rgb(162, 205, 255);
-    height: 20vh;
+    height: 25vh;
     width: 100%;
-
     background-image: url(https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
@@ -2080,9 +2076,8 @@ i.fas.fa-stream {
 
 .card-columns .postImg-5 {
     background-color: rgb(255, 218, 218);
-    height: 30vh;
+    height: 50vh;
     width: 100%;
-
     background-image: url(https://images.unsplash.com/photo-1551516594-56cb78394645?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
