@@ -631,15 +631,20 @@ div.category:nth-child(3):before {
 }
 
 
-button.prev,button.next {
+button.prev,
+button.next {
     border: none;
     background: none;
-    outline:none;
+    outline: none;
 }
-button.prev i,button.next i{
+
+button.prev i,
+button.next i {
     color: rgb(255, 255, 255);
 }
-button.prev i:hover,button.next i:hover{
+
+button.prev i:hover,
+button.next i:hover {
     color: rgb(196, 196, 196);
 }
 
@@ -672,23 +677,25 @@ li.product {
     background-position: center;
 }
 
-.product-2{
+.product-2 {
     background-image: url(https://images.unsplash.com/photo-1554104707-a76b270e4bbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
 }
 
-.product-3{
+.product-3 {
     background-image: url(https://images.unsplash.com/photo-1565105336789-e9392607c17b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
 }
-.product-4{
+
+.product-4 {
     background-image: url(https://images.unsplash.com/photo-1519642918688-7e43b19245d8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
 }
-.product-5{
+
+.product-5 {
     background-image: url(https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
     background-size: cover;
     background-position: center;
@@ -839,7 +846,7 @@ li.product .rating {
     top: 3rem;
 }
 
-.panel-cover{
+.panel-cover {
     position: absolute;
     background: rgba(255, 255, 255, 0);
     top: 0;
@@ -852,7 +859,8 @@ li.product .rating {
     transition: .3s linear all;
     z-index: 99;
 }
-.panel-cover:hover{
+
+.panel-cover:hover {
     opacity: 1;
 }
 
@@ -1259,6 +1267,18 @@ li.ourTeam img {
 
 /*about workdspace*/
 
+@media(min-width:992px){
+    .nav-link.tel-md{
+        display: none;
+    }
+}
+
+@media(min-width:1064px){
+    .nav-link.tel-md{
+        display: block;
+    }
+}
+
 .work-1 {
     grid-area: work1;
     background-image: url(https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
@@ -1347,7 +1367,7 @@ li.ourTeam img {
 
 .works button.owl-next span {
     font-size: 5rem;
-    color: rgb(128, 128, 128,0.5);
+    color: rgb(128, 128, 128, 0.5);
 }
 
 .works button.owl-next span:hover {
@@ -1453,18 +1473,749 @@ li.ourTeam img {
     transform: translate(0, -60%);
 
 }
+
 .works-sm button.owl-prev span {
     font-size: 5rem;
-    color: rgb(128, 128, 128,0.5);
+    color: rgb(128, 128, 128, 0.5);
 }
+
 .works-sm button.owl-next span {
     font-size: 5rem;
-    color: rgb(128, 128, 128,0.5);
+    color: rgb(128, 128, 128, 0.5);
 }
 
 .works-sm button.owl-prev span:hover {
     color: rgb(255, 255, 255);
 }
+
 .works-sm button.owl-next span:hover {
     color: rgb(255, 255, 255);
+}
+
+
+
+/*BLOG CSS*/
+
+.blogSide-header {
+    height: 30vh;
+    position: relative;
+
+    background-color: #f4f4f4;
+    color: #494949;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+i.fas.fa-stream {
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 50%;
+    padding: .3rem;
+    font-size: .5rem;
+}
+
+/*blog breadcrum*/
+.blogSide-header .container {
+    height: 100%;
+}
+
+
+@media(min-width:200px) {
+    .blogSearch {
+        position: absolute;
+        bottom: .5rem;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+
+    .blogSearch.input-group {
+       
+        justify-content: center;
+    }
+
+    .blogSearch input.form-control {
+        flex-grow: 0;
+        width: 20%;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .blogSearch input[type=text].form-control:focus {       
+       width: 50%;
+    }
+
+    .blogSearch button.btn {}
+
+    .blogSearch input,
+    .blogSearch button,
+    .blogSearch input::placeholder {
+        border: none;
+        background-color: transparent;
+        color: #bababb;
+        font-size: .6rem;
+    }
+
+    .blogSearch input,
+    .blogSearch button {
+        border: none;
+        background-color: transparent;
+        
+    }
+
+    .blogSearch input:focus {
+        outline: none;
+        box-shadow: 0 0 0 0rem rgb(255, 255, 255);
+
+    }
+
+    .blogSearch button:hover {
+        background-color: #6d6d6d6b;
+    }
+}
+
+@media(min-width:768px) {
+    .blogSearch_lg {
+        position: absolute;
+        bottom: .5rem;
+
+    }
+
+    .blogSearch_lg.input-group {
+        width: auto;
+        justify-content: start;
+    }
+
+    .blogSearch_lg input.form-control {
+        flex-grow: 0;
+        width: 4rem;
+        transition: all 0.4s ease-in-out;
+    }
+
+    
+    .blogSearch_lg input[type=text].form-control:focus {
+        outline: none;
+        flex-grow: 1;
+        box-shadow: 0 0 0 0rem rgb(255, 255, 255);
+        width: 20rem;
+    }
+
+ 
+
+    .blogSearch_lg button.btn {}
+
+    .blogSearch_lg input,
+    .blogSearch_lg button,
+    .blogSearch_lg input::placeholder {
+        border: none;
+        background-color: transparent;
+        color: #bababb;
+        font-size: .6rem;
+    }
+
+    .blogSearch_lg input,
+    .blogSearch_lg button {
+        border: none;
+        background-color: transparent;
+        
+    }
+
+
+    .blogSearch_lg button:hover {
+        background-color: #6d6d6d6b;
+    }
+}
+
+/*blog content*/
+
+.blog-board .blogImg {
+    height: 40vh;
+    width: 100%;
+    background-color: rgb(211, 211, 211);
+}
+
+
+@media(min-width:300px) {
+    .blog-board .dates {
+        display: inline-block;
+        background-color: #919191;
+        width: 3rem;
+        height: 3rem;
+        font-size: .7rem;
+    }
+}
+
+@media(min-width:768px) {
+    .blog-board .dates {
+        width: 5rem;
+        height: 5rem;
+    }
+}
+
+.blog-board .dates .date,
+.blog-board .dates .month {
+    color: rgb(255, 255, 255);
+    line-height: .8;
+}
+
+.blog-board .summary {
+    color: #494949;
+}
+
+@media(min-width:200px) {
+    .blog-board .board-sm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-board .publish div {
+        font-size: .5rem;
+        margin-right: .2rem;
+        margin-bottom: .2rem;
+        text-transform: capitalize;
+        font-style: italic;
+        color: #919191;
+    }
+
+    .publish {
+        flex-direction: column;
+    }
+}
+
+@media(min-width:576px) {
+    .blog-board .board-sm {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .blog-board .publish div {
+        font-size: .5rem;
+        margin-right: 1rem;
+        text-transform: capitalize;
+        font-style: italic;
+        color: #919191;
+    }
+
+    .publish {
+        flex-direction: row;
+    }
+}
+
+
+.blog-board .publish i {
+    font-size: .5rem;
+    margin-right: .25rem;
+}
+
+.blog-board .readMore a {
+    color: #494949;
+}
+
+
+.blog-board .readMore a:hover {
+    color: #838383;
+}
+
+.card {
+    border: none;
+}
+
+.card-img {
+    border-radius: 0;
+}
+
+.page-link {
+    color: #000;
+    border: 1px solid #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.page-link:hover {
+    color: rgb(58, 58, 58);
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(59, 59, 59)
+}
+
+.pagination-sm .page-item:first-child .page-link {
+    border-top-left-radius: 0rem;
+    border-bottom-left-radius: 0rem;
+}
+
+.pagination-sm .page-item:last-child .page-link {
+    border-top-right-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+}
+
+/*right side*/
+.sideBar .categories .title {
+    margin-bottom: .3rem;
+    font-size: .7rem;
+}
+
+@media(min-width:425px) {
+    .sideBar .categories .title {
+
+        font-size: 1rem;
+    }
+
+}
+
+.sideBar .categories .decor {
+    width: 40px;
+    border: 1px solid #494949;
+}
+
+.sideBar .categories li {
+    margin-bottom: 0.3rem;
+}
+
+
+.sideBar .categories a {
+    color: #494949;
+
+}
+
+.sideBar .categories a:hover {
+    color: #858585;
+}
+
+
+/* 
+.sideBar .popularPosts .title{  
+    font-size: .7rem;
+    margin-bottom: .3rem;
+}
+@media(min-width:425px){
+  
+    .sideBar .popularPosts .title{  
+        font-size: 1rem;        
+    }
+} */
+
+.sideBar .popularPosts .decor {
+    width: 70px;
+    border: 1px solid #494949;
+}
+
+.sideBar .popularPosts li {
+    margin-bottom: 0.3rem;
+}
+
+
+.sideBar .popularPosts a {
+    color: #494949;
+
+}
+
+.sideBar .popularPosts a:hover {
+    color: #858585;
+}
+
+.PPSummary .title,
+.PPSummary .postTime {
+    font-size: .7rem;
+}
+
+.PPSummary .postTime {
+    font-style: italic;
+    margin-top: .25rem;
+}
+
+@media(min-width:300px) {
+    .popularPostsImg {
+        background-color: rgb(141, 141, 141);
+        width: 1.5rem;
+        height: 1.5rem;
+        color: white;
+        flex-shrink: 0;
+        background-image: url(https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(min-width:576px) {
+    .popularPostsImg {
+        background-color: rgb(141, 141, 141);
+        width: 3rem;
+        height: 3rem;
+        color: white;
+        flex-shrink: 0;
+        background-image: url(https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media(min-width:768px) {
+    .popularPostsImg {
+        background-color: rgb(141, 141, 141);
+        width: 4rem;
+        height: 4rem;
+        color: white;
+        flex-shrink: 0;
+        background-image: url(https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+/*tags*/
+
+.sideBar .tags .title {
+    margin-bottom: .3rem;
+    font-size: .7rem;
+}
+
+@media(min-width:425px) {
+    .sideBar .tags .title {
+
+        font-size: 1rem;
+    }
+
+}
+
+.sideBar .tags .decor {
+    width: 20px;
+    border: 1px solid #494949;
+}
+
+.sideBar .tags li {
+    margin-bottom: 0.3rem;
+}
+
+
+.sideBar .tags a {
+    color: #494949;
+
+}
+
+.sideBar .tags a:hover {
+    color: #858585;
+}
+
+
+/*blog full width css*/
+
+.blogNavbar {
+    background-color: #eeeeee;
+    padding: .5rem 0;
+    color: #696969;
+    font-size: .5rem;
+}
+.blogNavbar-sm .menu {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.blogNavbar .menu {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.blogFilter .blogSearchFW {
+    width: 13rem;
+}
+
+.blogFilter .blogSearchFW input {
+    background-color: #eeeeee;
+    border: none;
+    flex-grow: 0;
+    width: 4rem;
+    transition: all 0.4s ease-in-out;
+    font-size: .5rem;
+}
+
+.blogFilter .blogSearchFW input:focus {
+    background-color: #ffffff;
+    flex-grow: 1;
+}
+
+
+.blogFilter .blogSearchFW button {
+    border: none;
+}
+
+.blogFilter .blogSearchFW button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.blogFilter input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0rem rgb(255, 255, 255);
+}
+
+.blogFilter button.FWSearch_btn:hover,
+.blogFilter button.FWCategories_btn:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.blogFWPost .card-body {
+    position: relative;
+    top: -4rem;
+    background-color: #fff;
+    width: 90%;
+}
+.blogFWPost .card .card-img{
+    height: 50%;
+}
+.card-img-overlay {
+    padding: 0;
+}
+
+.blogFWPost .dates {
+    background-color: #fff;
+    width: 4rem;
+    height: 4rem;
+    padding: 1rem;
+    line-height: .9;
+    position: absolute;
+    left: 5%;
+    top: 1%;
+
+}
+
+.blogFWPost .dates .date {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.blogFWPost .dates .month {
+    font-size: .8rem;
+}
+
+.blogFWPost .postInfoCount {
+    margin-top: 1rem;
+    position: absolute;
+    right: 5%;
+    top: 1%;
+}
+
+.blogFWPost .publish {
+    color: #494949;
+    font-size: .8rem;
+}
+
+.blogFWPost .publish i {
+    margin-right: .5rem;
+}
+
+.blogFWPost .publish div {
+    margin-right: 2.5rem;
+    font-style: italic;
+}
+
+.blogFWPost .card-text {
+    color: #494949;
+}
+
+
+
+@media(min-width:576px){
+    .card-columns {
+        column-count: 2;
+    }
+}
+@media(min-width:768px){
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+
+
+.card-columns {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.card-columns .card{
+    border-radius: 0;
+}
+
+.card-columns .postImg-1 {
+    background-color: rgb(65, 65, 65);
+    height: 25vh;
+    width: 100%;    
+    background-image: url(https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+    
+}
+.card-columns .postImg-2 {
+    background-color: rgb(139, 139, 139);
+    height: 20vh;
+    width: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1558603668-6570496b66f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-columns .postImg-3 {
+    background-color: rgb(168, 168, 168);
+    height: 20vh;
+    width: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1564320382348-c06ae02a3897?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-columns .postImg-4 {
+    background-color: rgb(162, 205, 255);
+    height: 20vh;
+    width: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-columns .postImg-5 {
+    background-color: rgb(255, 218, 218);
+    height: 30vh;
+    width: 100%;
+
+    background-image: url(https://images.unsplash.com/photo-1551516594-56cb78394645?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;
+}
+
+.author{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    height: 100%;
+}
+.author .authorImg{
+    background-color: #fff;
+    width: 100%;
+    height: 8rem;
+    background-image: url(https://images.unsplash.com/photo-1494883759339-0b042055a4ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    background-size: cover;
+    background-position: center;    
+}
+.author .content{
+    color: #898989;
+}
+
+.authorSocial a{
+    margin-right: 1rem;
+    color: #151515;
+}
+.authorSocial a:hover{
+    margin-right: 1rem;
+    color: #3f3f3f;
+}
+
+.comments{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.comments .decor{
+    width: 80px;
+    border: 1px solid #494949;
+}
+
+.comments .media {
+    width: 90%;
+    margin: 0 auto;
+}
+
+@media(min-width:200px){
+    .comments .media .commentImg{
+        width: 2rem;
+        height: 2rem;
+        margin-right: 1rem;  
+    }
+}
+@media(min-width:576px){
+    .comments .media .commentImg{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;  
+    }
+}
+@media(min-width:768px){
+    .comments .media .commentImg{
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;  
+    }
+}
+@media(min-width:992px){
+    .comments .media .commentImg{
+        width: 5rem;
+        height: 5rem;
+        margin-right: 1rem;  
+    }
+}
+
+
+.comments .media .commentName{
+    margin-bottom: 0;
+}
+
+.comments .media .commentPublish{
+    font-style: italic;
+    font-size: .5rem;
+}
+
+
+.comments .media .commentContent{
+    font-size: .8rem;
+    color: #858585;
+}
+
+.comments .media .media{
+    width: 100%;
+}
+
+.leaveComment{
+    width: 90%;
+    margin: 0 auto;
+}
+.leaveComment input,
+.leaveComment textarea,
+.leaveComment button{
+    background-color: #f7f7f7;
+    border: none;    
+    color: #858585;
+}
+
+.leaveComment textarea{
+    resize: none;
+}
+
+.leaveComment button{
+    background-color: #f7f7f7; 
+    border: none; 
+    border-radius: 0;
+    padding: .5rem 1rem;
+    color: #858585;
+}
+
+.leaveComment button:hover{
+    background-color: #727272; 
+    color: rgb(255, 255, 255);
+}
+
+.leaveComment .form-control{
+    border-radius: 0;
+    padding: .5rem 1rem;    
+}
+
+.leaveComment .form-group{
+    margin-bottom: 2rem;
+}
+
+#blogFWFooter{
+    background-color: #f4f4f4;
 }

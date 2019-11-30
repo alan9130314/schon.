@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/handlebars-v4.4.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/action.js"></script>
+    <script src="https://kit.fontawesome.com/e7f5427ae7.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+    <title>Blog Post</title>
+</head>
+
+
+
+<body>
+    <div id="nav" class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light text-nowrap p-3">
+            <a class="navbar-brand" href="#"><img src="img\home\logo.png" alt="logo"></a>
+            <div class="navbar-nav nav-tele ml-1 d-none d-lg-block">
+                <a class="nav-link tel-md" href="tel:+1-(555)-333-22-11"><span class="icon mr-1"><i
+                            class="fas fa-phone-alt"></i></span>+1
+                    (555) 333 22 11</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-uppercase ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">products<span class="icon"><i
+                                    class="fas fa-angle-down ml-2"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">pages<span class="icon"><i
+                                    class="fas fa-angle-down ml-2"></i></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline py-2  d-flex">
+                    <div class="input-group d-lg-none">
+                        <input type="text" class="input_search form-control " placeholder="Search" aria-label="Search"
+                            aria-describedby="btn_search">
+
+                        <div class="input-group-append">
+                            <button class="btn border-0 btn_search" type="button" id="btn_search"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+
+                <button class="nav-link align-self-stretch btn border-0 btn-lg_search d-none d-lg-block py-md-1 ml-lg-2"
+                    type="button" id="btn_search">
+                    <i class=" fas fa-search "></i>
+                </button>
+
+                <button class="nav-link align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1"
+                    type="button" id="btn_search">
+                    <i class="far fa-heart"></i>
+                </button>
+
+                <div class="basket d-flex align-items-center d-lg-none px-0 py-md-1 ">
+                    <span class="icon mr-4"><i class="fas fa-shopping-basket"></i></span>
+
+                    <div class="text-uppercase font-weight-bold">
+                        <div class="basket-title">shopping cart</div>
+                        <div class="basket-items "><span class="basket_qty">3 </span>items $<span
+                                class="basket_subtotal">74.00</span></div>
+                    </div>
+                </div>
+
+                <button
+                    class="basket btn border-0  nav-link align-self-stretch align-items-center d-lg-flex d-none py-md-1  ">
+                    <span class="icon"><i class="fas fa-shopping-basket "></i>
+                        <div class="basket-less font-weight-bold ">
+                            <span class="basket_qty rounded-circle">3</span>
+                        </div>
+                    </span>
+                </button>
+
+                <button class="nav-link align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1 pb-md-2"
+                    type="button" id="btn_search">
+                    <i class="fas fa-stream "></i>
+
+                </button>
+
+
+
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="blogSide-header">
+        <div class="container d-flex flex-column justify-content-center text-center">
+
+            <h1 class="breadcrumb-title text-uppercase  ">
+                blog detail full width
+            </h1>
+        </div>
+    </div>
+    <div class="blogNavbar  mb-4 ">
+        <div class="blogNavbar-md container d-flex  justify-content-between align-items-center">
+            <div class="breadcrumb-subtitle d-flex justify-content-center align-items-center">
+                <span class="pl-0">home</span><i class="fas fa-angle-right"></i><span>blog</span>
+            </div>
+
+            <div class="menu position-absolute"><i class="fas fa-th"></i></div>
+
+            <div class="blogFilter  d-flex justify-content-end align-items-center ">
+                <div class="d-none d-md-flex input-group input-group-sm blogSearchFW justify-content-end ">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary " type="button" id="button-addon2"><i
+                                class="fas fa-search"></i></button>
+                    </div>
+                </div>
+                <div class="d-none d-md-block ml-3 categories">
+                    <div class="title text-capitalize d-flex align-items-center">
+                        categories<button type="button" class="ml-2 btn FWCategories_btn  btn-sm "><i
+                            class="fas fa-bars"></i></button>
+                    </div>
+
+                </div>
+                <button type="button" class="btn FWSearch_btn  btn-sm d-block d-md-none"><i
+                        class="fas fa-search"></i></button>
+
+                <button type="button" class="ml-2 btn FWCategories_btn  btn-sm d-block d-md-none"><i
+                        class="fas fa-bars"></i></button>
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+    <section class="blogFWPost">
+        <div class="container">
+            <div class="card text-black d-flex flex-column align-items-center ">
+                <img src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
+                    class="card-img position-relative" alt="...">
+                <div class="card-img-overlay">
+                    <div class="">
+                        <div class="dates d-flex flex-column text-capitalize align-items-center justify-content-center">
+                            <h5 class="date">25</h5>
+                            <div class="month">april</div>
+                        </div>
+                        <div class="postInfoCount d-flex text-muted">
+                            <div class="commentsCount mr-3">
+                                <i class=" mr-2 fas fa-comments"></i>12
+                            </div>
+                            <div class="sharesCount">
+                                <i class="mr-2 fas fa-share-alt"></i>14
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title text-uppercase font-weight-bold">ideas for living rooms</h3>
+                    <div class="publish d-flex mb-3">
+                        <div class="publishDate"><i class="far fa-clock"></i>20 april 2015</div>
+                        <div class="category"><i class="fas fa-list"></i>design</div>
+                        <div class="comment"><i class="fas fa-comment"></i>2 comments</div>
+                    </div>
+                    <p class="card-text mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias
+                        aliquam explicabo sequi possimus voluptates provident minus asperiores quibusdam quod
+                        reiciendis. Officiis nesciunt aperiam quae inventore, qui recusandae at sunt vero ullam numquam
+                        quis explicabo! Quasi animi nemo suscipit delectus magni! Accusamus alias doloribus doloremque
+                        est. Perspiciatis aperiam veniam mollitia beatae.</p>
+                    <p class="card-text mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error aliquam
+                        voluptate cupiditate assumenda asperiores magni eos eligendi soluta! Iure repellat esse
+                        doloribus quia, saepe autem hic dolores distinctio labore deserunt, illo ipsum quod, maiores
+                        quisquam dolorem quis fuga quos repellendus.</p>
+                    <p class="card-text pt-4 mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                        aliquam voluptate cupiditate assumenda asperiores magni eos eligendi soluta! Iure repellat esse
+                        doloribus quia, saepe autem hic dolores distinctio labore deserunt, illo ipsum quod, maiores
+                        quisquam dolorem quis fuga quos repellendus.</p>
+
+
+
+                    <div class="card-columns mb-5">
+                        <div class="card postImg-1">
+                        </div>
+                        <div class="card postImg-2">
+                        </div>
+                        <div class="card postImg-3">
+                        </div>
+                        <div class="card postImg-4">
+                        </div>
+                        <div class="card postImg-5">
+                        </div>
+                    </div>
+
+                    <p class="card-text  mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo
+                        accusantium saepe. Placeat laborum necessitatibus magni neque voluptatum illum. Quidem veritatis
+                        atque eaque dolores delectus magnam magni quas soluta nobis!</p>
+                    <p class="card-text  mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quo
+                        accusantium saepe. Placeat laborum necessitatibus magni neque voluptatum illum. Quidem veritatis
+                        atque eaque dolores delectus magnam magni quas soluta nobis!</p>
+
+                    <div class="author mb-5 p-4 p-md-5">
+                        <div class="row">
+                            <div class="col-12 col-md-3 mb-3">
+                                <div class="authorImg">
+
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h5 class="title text-capitalize font-weight-bold">
+                                    clara wooden
+                                </h5>
+                                <p class="content">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quia sequi veritatis
+                                    eveniet, officia dolores fugit inventore voluptate id commodi?
+                                </p>
+                                <ul class="authorSocial list-unstyled d-flex">
+                                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comments">
+                        <h4 class="text-uppercase font-weight-bold">comments</h4>
+                        <div class="d-flex justify-content-start mb-5">
+                            <div class="decor"></div>
+                        </div>
+                        <div class="media">
+                            <img class="commentImg"
+                                src="https://images.unsplash.com/photo-1494883759339-0b042055a4ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                alt="">
+
+                            <div class="media-body">
+                                <h5 class="commentName text-capitalize">john wick</h5>
+                                <div class="commentPublish text-capitalize mb-3">
+                                    may24,2015
+                                </div>
+                                <div class="commentContent">
+                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis.
+                                    Fusce
+                                    condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                    faucibus.
+                                </div>
+
+                                <hr class="my-5">
+                                <div class="media mt-3">
+                                    <img class="commentImg"
+                                        src="https://images.unsplash.com/photo-1494883759339-0b042055a4ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                                        alt="">
+                                    <div class="media-body">
+                                        <h5 class="commentName text-capitalize">john wick</h5>
+                                        <div class="commentPublish text-capitalize mb-3">
+                                            may24,2015
+                                        </div>
+                                        <div class="commentContent">
+                                            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque
+                                            ante
+                                            sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra
+                                            turpis. Fusce
+                                            condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in
+                                            faucibus.
+                                        </div>
+                                        <hr class="my-5">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="leaveComment">
+                        <h4 class="mb-5 text-uppercase font-weight-bold">leave a comment</h4>
+                        <form>
+                            <div class="form-row ">
+                                <div class="form-group col-md-4">
+                                    <input type="" class="form-control " id="inputEmail4" placeholder="Name">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="email" class="form-control " id="inputPassword4" placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <input type="" class="form-control" id="inputPassword4" placeholder="Website">
+                                </div>
+                                <div class="form-group col-md-12">                               
+                                    <textarea class="form-control " id="exampleFormControlTextarea1" rows="3" placeholder="Comment"></textarea>
+                                </div>
+                                <button type="submit" class="btn ">Submit</button>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <div id="footer" class="mt-5  ">
+        <div id="footer-top-infos" class="pt-5">
+
+            <div class="container">
+                <div class="d-md-flex justify-content-between ">
+                    <div class="links  mb-5 d-none d-sm-block">
+                        <div class="d-flex justify-content-between">
+                            <div class="contact-mr">
+                                <div class="title mb-4 text-uppercase">categories</div>
+                                <ul class="categories">
+                                    <li><a href="#">all</a></li>
+                                    <li><a href="#">chairs</a></li>
+                                    <li><a href="#">sofas</a></li>
+                                    <li><a href="#">living</a></li>
+                                    <li><a href="#">bedroom</a></li>
+                                    <li><a href="#">tables</a></li>
+                                    <li><a href="#">new</a></li>
+                                </ul>
+                            </div>
+                            <div class="contact-mr">
+                                <div class="title text-uppercase">costomer</div>
+                                <ul class="costomer">
+                                    <li><a href="#">FAQs</a></li>
+                                    <li><a href="#">support</a></li>
+                                    <li><a href="#">repair center</a></li>
+                                </ul>
+                            </div>
+                            <div class="contact-mr">
+                                <div class="title text-uppercase">pages</div>
+                                <ul class="pages">
+                                    <li><a href="#">home</a></li>
+                                    <li><a href="#">contact</a></li>
+                                    <li><a href="#">product</a></li>
+                                    <li><a href="#">about</a></li>
+                                    <li><a href="#">terms</a></li>
+                                </ul>
+                            </div>
+                            <div class="contact-mr">
+                                <div class="title text-uppercase">socials</div>
+                                <ul class="socials">
+                                    <li><a href="#">twitter</a></li>
+                                    <li><a href="#">facebook</a></li>
+                                    <li><a href="#">google+</a></li>
+                                    <li><a href="#">pinterest</a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="links  mb-5  d-block d-sm-none">
+                        <div class="row">
+                            <div class="col">
+                                <div class="contact-mr">
+                                    <div class="title mb-4 ">categories</div>
+                                    <ul class="categories">
+                                        <li><a href="#">all</a></li>
+                                        <li><a href="#">chairs</a></li>
+                                        <li><a href="#">sofas</a></li>
+                                        <li><a href="#">living</a></li>
+                                        <li><a href="#">bedroom</a></li>
+                                        <li><a href="#">tables</a></li>
+                                        <li><a href="#">new</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact-mr">
+                                    <div class="title">costomer</div>
+                                    <ul class="costomer">
+                                        <li><a href="#">FAQs</a></li>
+                                        <li><a href="#">support</a></li>
+                                        <li><a href="#">repair center</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact-mr">
+                                    <div class="title">pages</div>
+                                    <ul class="pages">
+                                        <li><a href="#">home</a></li>
+                                        <li><a href="#">contact</a></li>
+                                        <li><a href="#">product</a></li>
+                                        <li><a href="#">about</a></li>
+                                        <li><a href="#">terms</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="contact-mr">
+                                    <div class="title">socials</div>
+                                    <ul class="socials">
+                                        <li><a href="#">twitter</a></li>
+                                        <li><a href="#">facebook</a></li>
+                                        <li><a href="#">google+</a></li>
+                                        <li><a href="#">pinterest</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="info  mb-5 d-block text-md-right">
+                        <img src="img\contact\logo_blk.png" alt="logo">
+
+                        <div class="location mt-5 ">
+                            <a class="" href="#">
+                                Suite 18B, 148 Connaught Road Central<i class="fas fa-map-marker-alt ml-2"></i><br>New
+                                Yankee</a>
+                        </div>
+
+                        <div class="tele ">
+                            <a href="tel:+1-(555)-333-22-11">+1 (555) 333 22 11<span class="icon"><i
+                                        class="fas fa-phone-alt ml-2"></i></span></a>
+                        </div>
+
+                        <div class="mail">
+                            <a href="mailto:info@schon.chairs">info@schon.chairs<span class="icon"><i
+                                        class="far fa-envelope ml-2"></i></span></a>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div id="footer-bottom" class="py-5">
+            <div class="container">
+                <div class="d-flex flex-column justify-content-center text-center ">
+                    <div class="pays">
+                        <div class="pay">
+                            <img src="img\about\footer_pasys.png" alt="">
+                        </div>
+                    </div>
+                    <div class="copyright mt-3">
+                        Copyright shön. All right recerved
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+
+</html>
