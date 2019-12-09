@@ -56,7 +56,7 @@
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon d-none"></span><i class="fas fa-bars"></i>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -64,7 +64,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item twoLevelBtn">
                         <a class="nav-link" href="products.html">products<span class="icon"><i
                                     class="fas fa-angle-down ml-2"></i></span></a>
                     </li>
@@ -106,76 +106,205 @@
 
                 </button>
 
-                <div class="basket  d-flex align-items-center d-lg-none px-0 py-md-1">
-                    <span class="icon mr-4"><i class="fas fa-shopping-basket"></i></span>
-
-                    <div class="text-uppercase font-weight-bold">
-                        <div class="basket-title">shopping cart</div>
-                        <div class="basket-items "><span class="basket_qty">3 </span>items $<span
-                                class="basket_subtotal">74.00</span></div>
-                    </div>
-                </div>
-
-                <div class=" basket align-self-stretch align-items-center d-lg-flex d-none py-md-1 p-3">
-                    <span class="icon"><i class="fas fa-shopping-basket "></i>
-                        <div class="basket-less text-uppercase font-weight-bold ">
-                            <span class="basket_qty rounded-circle">3</span>
+                <div class="basket">
+                    
+                        <div class=" d-flex align-items-center d-lg-none px-0 py-md-1">
+                            <span class="icon mr-4"><i class="fas fa-shopping-basket"></i></span>
+    
+                            <div class="text-uppercase font-weight-bold">
+                                <div class="basket-title">shopping cart</div>
+                                <div class="basket-items "><span class="basket_qty">3 </span>items $<span
+                                        class="basket_subtotal">74.00</span></div>
+                            </div>
                         </div>
-                    </span>
-                </div>
+    
+                        <div class="align-self-stretch align-items-center d-lg-flex d-none py-md-1 p-3">
+                                <span class="icon"><i class="fas fa-shopping-basket "></i>
+                                    <div class="basket-less text-uppercase font-weight-bold ">
+                                        <span class="basket_qty rounded-circle">3</span>
+                                    </div>
+                                </span>
+                            </div>
+                    </div>
             </div>
         </nav>
 
     </div>   
 
-    <div id="modal-container">
-            <div id="shoppingCart" class="productCart">
-                <span class="triangle"></span>
-                <div class="content ">
-                    <div class="PWrap ">
-                        <div class="PImg"></div>
-                        <div class="PInfo ">
-                            <div class="PName">Marvelous Modern 3 Seater</div>
-                            <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
-                            <div class="QTY">Qty:1</div>
+    <div id="shoppingCart" class="homeCart-sm homeCart-md homeCart-lg productCart">
+            <span class="triangle"></span>
+            <div class="content ">
+                <div class="PWrap ">
+                    <div class="PImg"></div>
+                    <div class="PInfo ">
+                        <div class="PName">Marvelous Modern 3 Seater</div>
+                        <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
+                        <div class="QTY">Qty:1</div>
     
+                    </div>
+                    <button class="delete btn"><i class="fas fa-times"></i></butto>
+                </div>
+                <div class="PWrap ">
+                    <div class="PImg"></div>
+                    <div class="PInfo ">
+                        <div class="PName">Marvelous Modern 3 Seater</div>
+                        <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
+                        <div class="QTY">Qty:1</div>
+    
+                    </div>
+                    <button class="delete btn"><i class="fas fa-times"></i></butto>
+                </div>
+                <div class="PWrap ">
+                    <div class="PImg"></div>
+                    <div class="PInfo ">
+                        <div class="PName">Marvelous Modern 3 Seater</div>
+                        <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
+                        <div class="QTY">Qty:1</div>
+    
+                    </div>
+                    <button class="delete btn"><i class="fas fa-times"></i></butto>
+                </div>
+    
+    
+                <hr>
+                <div class="subTotal">
+                    <span class="subtotal">sub total</span>
+                    <span class="total"><i class="fas fa-euro-sign"></i>799,00</span>
+                </div>
+                <hr>
+                <div class="cartBtn">
+                    <a href="order shopping cart.html" class="btn viewCart btn-sm rounded-pill">view cart</a>
+                    <a href="order checkout.html" class="btn checkOut btn-sm rounded-pill">chechout</a>
+    
+                </div>
+            </div>
+        </div>
+    <div id="twoLevelNav" class="homeTwoLevelNav container ">
+        <span class="triangle"></span>
+        <div class="content ">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="productListWrap">
+                        <h6 class="productTitle">sofas & armchairs</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                sofas</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                armchairs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                poufs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                footstools</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                lounge chairs</a>
                         </div>
-                        <button class="delete btn"><i class="fas fa-times"></i></butto>
                     </div>
-                    <div class="PWrap ">
-                        <div class="PImg"></div>
-                        <div class="PInfo ">
-                            <div class="PName">Marvelous Modern 3 Seater</div>
-                            <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
-                            <div class="QTY">Qty:1</div>
-    
+                    <div class="productListWrap">
+                        <h6 class="productTitle">accessories</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                sofas</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                armchairs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                poufs</a>
                         </div>
-                        <button class="delete btn"><i class="fas fa-times"></i></butto>
                     </div>
-                    <div class="PWrap ">
-                        <div class="PImg"></div>
-                        <div class="PInfo ">
-                            <div class="PName">Marvelous Modern 3 Seater</div>
-                            <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
-                            <div class="QTY">Qty:1</div>
-    
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="productListWrap">
+                        <h6 class="productTitle">tables & chairs</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                chairs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                stools</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                benches</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                coffe tables</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                console tables</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                secretary desks</a>
                         </div>
-                        <button class="delete btn"><i class="fas fa-times"></i></butto>
                     </div>
-                    <hr>
-                    <div class="subTotal">
-                        <span class="sub">sub total</span>
-                        <span class="total"><i class="fas fa-euro-sign"></i>799,00</span>
+                    <div class="productListWrap">
+                        <h6 class="productTitle">office</h6>
+                        <div class="productDecor officeDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                office desks</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                meeting tables</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                task chairs</a>
+                        </div>
                     </div>
-                    <hr>
-                    <div class="cartBtn">
-                        <a href="order shopping cart.html" class="btn viewCart btn-sm rounded-pill">view cart</a>
-                        <a href="order checkout.html" class="btn checkOut btn-sm rounded-pill">chechout</a>
-    
+                </div>
+                <div class=" col-12 col-md-3">
+                    <div class="productListWrap">
+                        <h6 class="productTitle">kitchen furniture</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                kitchen taps</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                breakfast time</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                cooking</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                food storage boxes</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                spice jars</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                napskins</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                oven gloves</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                placemats</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                cooking</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                food storage boxes</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                spice jars</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 box">
+                    <div class="boxWrap">
+                        <div class="boxImg">
+                            <h6 class="boxTitle">chair with<br>armrests</h6>
+
+                            <div class="boxRatting">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <div class="boxOriginPrice">
+                                <i>$</i>129.00
+                            </div>
+                            <div class="boxSalePrice">
+                                <i>$</i>99.00
+                            </div>
+
+                            <div class="boxLink">
+                                <a href="#">hurry up!<i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
     <section id="productDetail" class="mb-5" style="background-color: #f6f6f6; ">
         <div class="container py-5 px-3" >

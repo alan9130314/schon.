@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -33,6 +33,7 @@
 </head>
 
 <body>
+
     <div id="header-info">
         <div class="container ">
             <div class=" d-md-flex justify-content-between align-items-center">
@@ -71,21 +72,21 @@
 
         </div>
     </div>
-    <div id="nav" class="">
+    <div id="nav" class=" bg-light">
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light text-nowrap py-1">
+            <nav class="navbar navbar-expand-lg navbar-light  bg-light text-nowrap py-1">
                 <a class="navbar-brand" href="index.html"><img src="img\home\logo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
                     aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon d-none"></span><i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0 text-uppercase">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="products.html">products<span class="icon"><i
+                        <li class="nav-item twoLevelBtn">
+                            <a class="nav-link " href="products.html">products<span class="icon"><i
                                         class="fas fa-angle-down ml-2"></i></span></a>
                         </li>
                         <li class="nav-item">
@@ -132,54 +133,211 @@
             </nav>
         </div>
     </div>
-    <div id="modal-container">
-        <div id="shoppingCart" class="homeCart">
-            <span class="triangle"></span>
-            <div class="content ">
-                <div class="PWrap ">
-                    <div class="PImg"></div>
-                    <div class="PInfo ">
-                        <div class="PName">Marvelous Modern 3 Seater</div>
-                        <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
-                        <div class="QTY">Qty:1</div>
+    <div id="shoppingCart" class=" homeCart-sm homeCart-md homeCart-lg">
+        <span class="triangle"></span>
+        <div class="content ">
+            <div class="PWrap ">
+                <div class="PImg"></div>
+                <div class="PInfo ">
+                    <div class="PName">Marvelous Modern 3 Seater</div>
+                    <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
+                    <div class="QTY">Qty:1</div>
+
+                </div>
+                <button class="delete btn"><i class="fas fa-times"></i></butto>
+            </div>
+            <div class="PWrap ">
+                <div class="PImg"></div>
+                <div class="PInfo ">
+                    <div class="PName">Marvelous Modern 3 Seater</div>
+                    <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
+                    <div class="QTY">Qty:1</div>
+
+                </div>
+                <button class="delete btn"><i class="fas fa-times"></i></butto>
+            </div>
+            <div class="PWrap ">
+                <div class="PImg"></div>
+                <div class="PInfo ">
+                    <div class="PName">Marvelous Modern 3 Seater</div>
+                    <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
+                    <div class="QTY">Qty:1</div>
+
+                </div>
+                <button class="delete btn"><i class="fas fa-times"></i></butto>
+            </div>
+
+
+            <hr>
+            <div class="subTotal">
+                <span class="subtotal">sub total</span>
+                <span class="total"><i class="fas fa-euro-sign"></i>799,00</span>
+            </div>
+            <hr>
+            <div class="cartBtn">
+                <a href="order shopping cart.html" class="btn viewCart btn-sm rounded-pill">view cart</a>
+                <a href="order checkout.html" class="btn checkOut btn-sm rounded-pill">chechout</a>
+
+            </div>
+        </div>
+    </div>
+    <div id="twoLevelNav" class="homeTwoLevelNav container ">
+        <span class="triangle"></span>
+        <div class="content ">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <div class="productListWrap">
+                        <h6 class="productTitle">sofas & armchairs</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                sofas</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                armchairs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                poufs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                footstools</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                lounge chairs</a>
+                        </div>
+                    </div>
+                    <div class="productListWrap">
+                        <h6 class="productTitle">accessories</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                sofas</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                armchairs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                poufs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                    <div class="productListWrap">
+                        <h6 class="productTitle">tables & chairs</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                chairs</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                stools</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                benches</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                coffe tables</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                console tables</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                secretary desks</a>
+                        </div>
+                    </div>
+                    <div class="productListWrap">
+                        <h6 class="productTitle">office</h6>
+                        <div class="productDecor officeDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                office desks</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                meeting tables</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                task chairs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3">
+                    <div class="productListWrap">
+                        <h6 class="productTitle">kitchen furniture</h6>
+                        <div class="productDecor"></div>
+                        <div class="productList list-group list-group-flush border-0">
+                            <a href="#" class="list-group-item list-group-item-action">
+                                kitchen taps</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                breakfast time</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                cooking</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                food storage boxes</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                spice jars</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                napskins</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                oven gloves</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                placemats</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                cooking</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                food storage boxes</a>
+                            <a href="#" class="list-group-item list-group-item-action">
+                                spice jars</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-md-3 box">
+                    <div class="boxWrap">
+                        <div class="boxImg">
+                            <h6 class="boxTitle">chair with<br>armrests</h6>
+
+                            <div class="boxRatting">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+
+                            <div class="boxOriginPrice">
+                                <i>$</i>129.00
+                            </div>
+                            <div class="boxSalePrice">
+                                <i>$</i>99.00
+                            </div>
+
+                            <div class="boxLink">
+                                <a href="#">hurry up!<i class="fas fa-angle-right"></i></a>
+                            </div>
+                        </div>
 
                     </div>
-                    <button class="delete btn"><i class="fas fa-times"></i></butto>
                 </div>
-                <div class="PWrap ">
-                    <div class="PImg"></div>
-                    <div class="PInfo ">
-                        <div class="PName">Marvelous Modern 3 Seater</div>
-                        <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
-                        <div class="QTY">Qty:1</div>
+            </div>
+        </div>
+    </div>
+    <div id="subscribe">       
+        <div class="modal fade show" id="subModal" tabindex="-1" role="dialog" aria-labelledby="subModal"
+            aria-hidden="true" data-show="true">
+            <div class="modal-dialog modal-dialog-centered " role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4 class="title">join our newsletter</h4>
+                        <p class="content">Subscribe now to get <span>15%</span> off on any product!</p>
+
+                        <input type="text" class="form-control rounded-pill" placeholder="Enter your e-mail" aria-label="subscribe"
+                            aria-describedby="basic-addon1">
+                        <button class="btn btn-sm" id="basic-addon1">subscribe</button>
+
+                        <div class="subDontShow">
+                            <div class="checkboxes">
+                                <label class="custom-checkbox">Don't show this popup again
+                                    <input type="checkbox" id="subcribeDontShow">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+
+                        </div>
 
                     </div>
-                    <button class="delete btn"><i class="fas fa-times"></i></butto>
-                </div>
-                <div class="PWrap ">
-                    <div class="PImg"></div>
-                    <div class="PInfo ">
-                        <div class="PName">Marvelous Modern 3 Seater</div>
-                        <div class="PPrice"><i class="fas fa-euro-sign"></i>599,00</div>
-                        <div class="QTY">Qty:1</div>
-
-                    </div>
-                    <button class="delete btn"><i class="fas fa-times"></i></butto>
-                </div>
-                <hr>
-                <div class="subTotal">
-                    <span class="sub">sub total</span>
-                    <span class="total"><i class="fas fa-euro-sign"></i>799,00</span>
-                </div>
-                <hr>
-                <div class="cartBtn">
-                    <a href="order shopping cart.html" class="btn viewCart btn-sm rounded-pill">view cart</a>
-                    <a href="order checkout.html" class="btn checkOut btn-sm rounded-pill">chechout</a>
 
                 </div>
             </div>
         </div>
     </div>
+
+
     <section class="boxes-top">
         <div class="container">
             <div class="row">
