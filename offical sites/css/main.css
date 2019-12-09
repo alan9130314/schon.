@@ -630,7 +630,7 @@ a:hover {
 .homeTwoLevelNav .triangle {
     position: absolute;
     top: -13px;
-    left: 30%;
+    left: 40%;
     width: 0;
     height: 0;
     border-style: solid;
@@ -1088,19 +1088,19 @@ a:hover {
 .box2 {
     background-color: #4c4c4c;
     color: rgb(255, 255, 255);
-    height: 50vh;
+    height: 60vh;
 }
 
 .box3 {
     background-color: #f3f3f3;
     position: relative;
-    height: calc(25vh);
+    height: calc(30vh);
 }
 
 .box4 {
     background-color: #f3f3f3;
     position: relative;
-    height: calc(25vh - .5rem);
+    height: calc(30vh - .5rem);
 }
 
 .box1 {
@@ -1158,14 +1158,20 @@ a:hover {
 
 }
 
-
-
-.box1-slogan {
-    position: absolute;
-    bottom: 3rem;
-    left: 3rem;
+@media(min-width:200px){
+    .box1-slogan {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 1rem;        
+    }
 }
-
+@media(min-width:768px){
+    .box1-slogan {
+        position: absolute;
+        bottom: 2.5rem;
+        left: 2.5rem;        
+    }
+}
 
 .gry-tag {
     background-color: #535353;
@@ -1365,18 +1371,18 @@ a:hover {
 .box5 {
     position: relative;
     background-color: #d0e9b0;
-    height: 20vh;
+    height: 25vh;
 }
 
 .box6 {
     position: relative;
     background-color: #f8f8f8;
-    height: calc(30vh - .5rem);
+    height: calc(35vh - .5rem);
 
 }
 
 .box7 {
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -1488,12 +1494,12 @@ a:hover {
 
 
 .carousel-item {
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 
 .carousel-item img {
-    height: 50vh;
+    height: 100%;
     width: 100%;
 
 }
@@ -4857,3 +4863,4 @@ form.billing textarea {
     border: 2px solid rgb(255, 255, 255);
     border-left: 0px;
 }
+

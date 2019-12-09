@@ -4,6 +4,11 @@ $(document).ready(function () {
     $('#subModal').modal('show');
   });
 
+  $('.btn-lg_search').click(function (e) { 
+    e.preventDefault();
+    $('#searchBar').modal('show');
+  });
+
   $('.basket').click(function (event) {
     // var heightHeader = $('#header-info').height();   
     // var heightNav = $('#nav').height();
@@ -68,8 +73,9 @@ $(document).ready(function () {
   // });  
 
 
+  
 
-  $('li.twoLevelBtn').mouseover(function (event) {
+  $('li.twoLevelBtn').mouseenter(function (event) {
     var heightBtn = $('li.twoLevelBtn').height();
     var offsetTop = $('li.twoLevelBtn').offset().top;
 
@@ -78,9 +84,12 @@ $(document).ready(function () {
     //取消事件冒泡  
     event.stopPropagation();
     //按钮的toggle,如果div是可见的,点击按钮切换为隐藏的;如果是隐藏的,切换为可见的。  
-    $('#twoLevelNav').show();
+    $('#twoLevelNav').stop().show('linear');
 
     return false;
+  });
+  $('#twoLevelNav').mouseenter(function () { 
+    $('#twoLevelNav').stop().show('linear');
   });
 
   $(document).click(function (event) {
@@ -92,7 +101,9 @@ $(document).ready(function () {
     }
   });
 
-
+$('#twoLevelNav').mouseleave(function () { 
+  $('#twoLevelNav').stop().hide('linear');
+});
 
 
 });
