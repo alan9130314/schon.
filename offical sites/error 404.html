@@ -5,20 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
-     <!-- CSS -->
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/main.css">
- 
-     <!-- JS -->
-     <script src="js/jquery-3.4.1.min.js"></script>
-     <script src="js/popper.min.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/action.js"></script> 
-     <script src="https://kit.fontawesome.com/e7f5427ae7.js" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/action.js"></script> 
+  <script src="https://kit.fontawesome.com/e7f5427ae7.js" crossorigin="anonymous"></script>
 
-
-    <title>Blog</title>
+    <title>Error 404</title>
 </head>
 
 
@@ -42,8 +40,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">home</a>
                     </li>
-                    <li class="nav-item  twoLevelBtn">
-                        <a class="nav-link" href="products.html">products<span class="icon"><i
+                    <li class="nav-item twoLevelBtn">
+                        <a class="nav-link " href="products.html">products<span class="icon"><i
                                     class="fas fa-angle-down ml-2"></i></span></a>
                     </li>
                     <li class="nav-item">
@@ -72,45 +70,37 @@
                     </div>
                 </form>
 
-                <button
-                    class="nav-link rounded-0 align-self-stretch btn border-0 btn-lg_search d-none d-lg-block py-md-1 ml-lg-2"
+                <button class="nav-link rounded-0 align-self-stretch btn border-0 btn-lg_search d-none d-lg-block py-md-1 ml-lg-3"
                     type="button" id="btn_search">
                     <i class=" fas fa-search "></i>
                 </button>
 
-                <button class="nav-link rounded-0 align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1"
+                <button class="nav-link rounded-0 align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1 "
                     type="button" id="btn_search">
                     <i class="far fa-heart"></i>
+
                 </button>
 
                 <div class="basket">
-                    
-                        <div class=" d-flex align-items-center d-lg-none px-0 py-md-1">
-                            <span class="icon mr-4"><i class="fas fa-shopping-basket"></i></span>
-    
-                            <div class="text-uppercase font-weight-bold">
-                                <div class="basket-title">shopping cart</div>
-                                <div class="basket-items "><span class="basket_qty">3 </span>items $<span
-                                        class="basket_subtotal">74.00</span></div>
-                            </div>
+
+                    <div class=" d-flex align-items-center d-lg-none px-0 py-md-1">
+                        <span class="icon mr-4"><i class="fas fa-shopping-basket"></i></span>
+
+                        <div class="text-uppercase font-weight-bold">
+                            <div class="basket-title">shopping cart</div>
+                            <div class="basket-items "><span class="basket_qty">3 </span>items $<span
+                                    class="basket_subtotal">74.00</span></div>
                         </div>
-    
-                        <div class="align-self-stretch align-items-center d-lg-flex d-none py-md-1 p-3">
-                                <span class="icon"><i class="fas fa-shopping-basket "></i>
-                                    <div class="basket-less text-uppercase font-weight-bold ">
-                                        <span class="basket_qty rounded-circle">3</span>
-                                    </div>
-                                </span>
-                            </div>
                     </div>
 
-                <button
-                    class="nav-link rounded-0 align-self-stretch btn border-0 btn-lg_fav d-none d-lg-block py-md-1 pb-md-2"
-                    type="button" id="btn_search">
-                    <i class="fas fa-stream "></i>
-
-                </button>
-
+                    <div class="align-self-stretch align-items-center d-lg-flex d-none py-md-1 p-3">
+                        <span class="icon"><i class="fas fa-shopping-basket "></i>
+                            <div class="basket-less text-uppercase font-weight-bold ">
+                                <span class="basket_qty rounded-circle">3</span>
+                            </div>
+                        </span>
+                    </div>
+                </div>
 
 
             </div>
@@ -293,270 +283,46 @@
         </div>
     </div>
 
-    <div class="blogSide-header mb-5 ">
-        <div class="container d-flex flex-column justify-content-center text-center">
-
-            <h1 class="breadcrumb-title text-uppercase  ">
-                blog list sidebar 2
-            </h1>
-            <div class="breadcrumb-subtitle d-flex justify-content-center align-items-center">
-                <span>home</span><i class="fas fa-angle-right"></i><span>blog</span><i
-                    class="fas fa-angle-right"></i><span>category</span>
-            </div>
-
-            <div class=" input-group blogSearch input-group-sm d-flex d-md-none">
-                <input type="text" class="form-control " placeholder="Search" aria-label="Search"
-                    aria-describedby="button-addon2">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                            class="fas fa-search"></i></button>
-                </div>
-            </div>
-
-            <div class=" input-group blogSearch_lg  input-group-sm d-none d-md-flex">
-                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
-                    aria-describedby="button-addon2">
-                <div class="input-group-append ">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i
-                            class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <section class="blog-board mt-5">
+    <div class="error-header d-flex flex-column justify-content-center  ">
         <div class="container">
             <div class="row">
-                <div class="posts col-12 col-md-8 position-relative mb-5">
-                    <div class="card mb-5">
-                        <img class="card-img"
-                            src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
-                            alt="">
-                        <div class="row board-sm">
-                            <div class="col-2">
-                                <div class="p-3 dates d-flex justify-content-center align-items-center flex-column">
-                                    <h4 class="date">25</h4>
-                                    <div class="month text-capitalize">april</div>
-                                </div>
-                            </div>
-                            <div class="col-10 mt-3 mt-md-4 mt-lg-5 summary position-static ">
-                                <h3 class="title text-uppercase font-weight-bold text-break">
-                                    ideas for living rooms
-                                </h3>
-                                <div class="publish d-flex justify-content-start">
-                                    <div class="publishDate"><i class="far fa-clock"></i>20 april 2015</div>
-                                    <div class="category"><i class="fas fa-list"></i>design</div>
-                                    <div class="comment"><i class="fas fa-comment"></i>2 comments</div>
-                                </div>
-                                <div class="content mt-4">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum illum
-                                    consectetur non corrupti quam vero fuga harum doloribus rem maiores, provident,
-                                    doloremque numquam, dolore adipisci pariatur id eius perferendis?
-                                </div>
-                                <div class="readMore text-uppercase mt-3 font-weight-bold">
-                                    <a class="stretched-link" href="blogFullWidth.html">read more</a>
-                                </div>
+                <div class="col-12 col-md-7 order-1  order-md-0">
+                    <h1 class="infoTitle text-uppercase  ">
+                        page not found!
+                    </h1>
+                    <p class="infoContent">
+                        The page you are looking for was moved,removed,renamed or might never existed.
+                    </p>
+                    <div class="d-flex ">
+                        <a href="index.html" class="btn btn-sm btn-back">back to home</a>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="SEARCH" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                            <div class="input-group-prepend">
+                                <button class="btn btn-sm btn-search input-group-text" id="basic-addon1"><i class="fas fa-search"></i></button>
                             </div>
                         </div>
                     </div>
-                    <div class="card mb-5">
-                        <img class="card-img"
-                            src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
-                            alt="">
-                        <div class="row board-sm">
-                            <div class="col-2">
-                                <div class="p-3 dates d-flex justify-content-center align-items-center flex-column">
-                                    <h4 class="date">25</h4>
-                                    <div class="month text-capitalize">april</div>
-                                </div>
-                            </div>
-                            <div class="col-10 mt-3 mt-md-4 mt-lg-5 summary position-static ">
-                                <h3 class="title text-uppercase font-weight-bold text-break">
-                                    ideas for living rooms
-                                </h3>
-                                <div class="publish d-flex justify-content-start">
-                                    <div class="publishDate"><i class="far fa-clock"></i>20 april 2015</div>
-                                    <div class="category"><i class="fas fa-list"></i>design</div>
-                                    <div class="comment"><i class="fas fa-comment"></i>2 comments</div>
-                                </div>
-                                <div class="content mt-4">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum illum
-                                    consectetur non corrupti quam vero fuga harum doloribus rem maiores, provident,
-                                    doloremque numquam, dolore adipisci pariatur id eius perferendis?
-                                </div>
-                                <div class="readMore text-uppercase mt-3 font-weight-bold">
-                                    <a class="stretched-link" href="blogFullWidth.html">read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-5">
-                        <img class="card-img"
-                            src="https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80"
-                            alt="">
-                        <div class="row board-sm">
-                            <div class="col-2">
-                                <div class="p-3 dates d-flex justify-content-center align-items-center flex-column">
-                                    <h4 class="date">25</h4>
-                                    <div class="month text-capitalize">april</div>
-                                </div>
-                            </div>
-                            <div class="col-10 mt-3 mt-md-4 mt-lg-5 summary position-static ">
-                                <h3 class="title text-uppercase font-weight-bold text-break">
-                                    ideas for living rooms
-                                </h3>
-                                <div class="publish d-flex justify-content-start">
-                                    <div class="publishDate"><i class="far fa-clock"></i>20 april 2015</div>
-                                    <div class="category"><i class="fas fa-list"></i>design</div>
-                                    <div class="comment"><i class="fas fa-comment"></i>2 comments</div>
-                                </div>
-                                <div class="content mt-4">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum illum
-                                    consectetur non corrupti quam vero fuga harum doloribus rem maiores, provident,
-                                    doloremque numquam, dolore adipisci pariatur id eius perferendis?
-                                </div>
-                                <div class="readMore text-uppercase mt-3 font-weight-bold">
-                                    <a class="stretched-link" href="blogFullWidth.html">read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination  justify-content-between pagination-sm">
-                            <li class=" page-item"><a class="page-link" href="#"><i
-                                        class="mr-2 fas fa-angle-left"></i>Previous</a></li>
-
-                            <li class="page-item"><a class="page-link" href="#">Next<i
-                                        class="ml-2 fas fa-angle-right"></i></a></li>
-                        </ul>
-                    </nav>
                 </div>
-                <div class="sideBar col-12 d-flex flex-column d-md-block col-md-4 text-md-right text-break">
-                    <div class="categories mb-5 order-1">
-                        <h6 class="title text-uppercase ">
-                            categories
-                        </h6>
-                        <div class="d-flex justify-content-md-end">
-
-                            <div class="decor"></div>
-                        </div>
-                        <ul class="list-unstyled text-capitalize mt-3">
-
-                            <li><a href="">design</a></li>
-                            <li><a href="">future</a></li>
-                            <li><a href="">kitchen</a></li>
-                            <li><a href="">photography</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="popularPosts mb-5 order-0">
-                        <h6 class="title text-uppercase ">
-                            popular post
-                        </h6>
-                        <div class="d-flex justify-content-md-end">
-                            <div class="decor"></div>
-                        </div>
-                        <ul class="list-unstyled d-flex align-items-md-end flex-column">
-                            <li>
-                                <a href="" class=" mt-3 d-flex">
-                                    <div class="mx-4 mx-md-3 PPSummary order-1 order-md-0">
-                                        <div class="title ">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        </div>
-                                        <div class="postTime">24.09.2015</div>
-
-                                    </div>
-                                    <div class="popularPostsImg order-0 order-md-1">
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class=" mt-3 d-flex">
-                                    <div class="mx-4 mx-md-3 PPSummary order-1 order-md-0">
-                                        <div class="title ">
-                                            Lorem ipsum dolor sit amet.
-                                        </div>
-                                        <div class="postTime">24.09.2015</div>
-
-                                    </div>
-                                    <div class="popularPostsImg order-0 order-md-1">
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class=" mt-3 d-flex">
-                                    <div class="mx-4 mx-md-3 PPSummary order-1 order-md-0">
-                                        <div class="title ">
-                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
-                                            reprehenderit.
-                                        </div>
-                                        <div class="postTime">24.09.2015</div>
-
-                                    </div>
-                                    <div class="popularPostsImg order-0 order-md-1">
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" class=" mt-3 d-flex">
-                                    <div class="mx-4 mx-md-3 PPSummary order-1 order-md-0">
-                                        <div class="title ">
-                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque?
-                                        </div>
-                                        <div class="postTime">24.09.2015</div>
-
-                                    </div>
-                                    <div class="popularPostsImg order-0 order-md-1">
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tags mb-5 order-2">
-                        <h6 class="title text-uppercase ">
-                            tags
-                        </h6>
-                        <div class="d-flex justify-content-md-end">
-
-                            <div class="decor"></div>
-                        </div>
-                        <ul class="list-unstyled text-capitalize mt-3">
-                            <li><a href="">
-                                    <div class="row">
-                                        <div class="col"></div>
-                                        <div class="col-2"></div>
-                                    </div>
-                                </a></li>
-                            <li><a href="">Fusce,mattis,nunc,lacus,</a></li>
-                            <li><a href="">vulputate,facilisis,dui</a></li>
-                            <li><a href="">efficitur,ut</a></li>
-                        </ul>
-
-                    </div>
-
-
+                <div class="col-12 col-md-5 order-0 order-md-1">
+                    <h1 class="display-1 text-center font-weight-bold">404</h1>
                 </div>
-
-
             </div>
         </div>
-    </section>
 
+    </div>
 
-
-
-    <div id="blog-footer" class="mt-5 contact-footer">
+    <div id="footer" class="mt-5 contact-footer">
         <div id="footer-top-infos" class="pt-5">
 
             <div class="container">
                 <div class="d-md-flex justify-content-between ">
+
+
                     <div class="links  mb-5 d-none d-sm-block">
                         <div class="d-flex justify-content-between">
                             <div class="contact-mr">
-                                <div class="title mb-4 text-uppercase">categories</div>
+                                <div class="title mb-4 ">categories</div>
                                 <ul class="categories">
                                     <li><a href="#">all</a></li>
                                     <li><a href="#">chairs</a></li>
@@ -568,7 +334,7 @@
                                 </ul>
                             </div>
                             <div class="contact-mr">
-                                <div class="title text-uppercase">costomer</div>
+                                <div class="title">costomer</div>
                                 <ul class="costomer">
                                     <li><a href="#">FAQs</a></li>
                                     <li><a href="#">support</a></li>
@@ -576,7 +342,7 @@
                                 </ul>
                             </div>
                             <div class="contact-mr">
-                                <div class="title text-uppercase">pages</div>
+                                <div class="title">pages</div>
                                 <ul class="pages">
                                     <li><a href="#">home</a></li>
                                     <li><a href="#">contact</a></li>
@@ -586,7 +352,7 @@
                                 </ul>
                             </div>
                             <div class="contact-mr">
-                                <div class="title text-uppercase">socials</div>
+                                <div class="title">socials</div>
                                 <ul class="socials">
                                     <li><a href="#">twitter</a></li>
                                     <li><a href="#">facebook</a></li>
@@ -601,8 +367,7 @@
 
                     <div class="links  mb-5  d-block d-sm-none">
                         <div class="row">
-                            <div class="col">
-                                <div class="contact-mr">
+                            <div class="col"><div class="contact-mr">
                                     <div class="title mb-4 ">categories</div>
                                     <ul class="categories">
                                         <li><a href="#">all</a></li>
@@ -613,20 +378,16 @@
                                         <li><a href="#">tables</a></li>
                                         <li><a href="#">new</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="contact-mr">
+                                </div></div>
+                            <div class="col"><div class="contact-mr">
                                     <div class="title">costomer</div>
                                     <ul class="costomer">
                                         <li><a href="#">FAQs</a></li>
                                         <li><a href="#">support</a></li>
                                         <li><a href="#">repair center</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="contact-mr">
+                                </div></div>
+                            <div class="col"> <div class="contact-mr">
                                     <div class="title">pages</div>
                                     <ul class="pages">
                                         <li><a href="#">home</a></li>
@@ -635,45 +396,41 @@
                                         <li><a href="#">about</a></li>
                                         <li><a href="#">terms</a></li>
                                     </ul>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="contact-mr">
+                                </div></div>
+                            <div class="col"> <div class="contact-mr">
                                     <div class="title">socials</div>
                                     <ul class="socials">
                                         <li><a href="#">twitter</a></li>
                                         <li><a href="#">facebook</a></li>
                                         <li><a href="#">google+</a></li>
                                         <li><a href="#">pinterest</a></li>
-
+        
                                     </ul>
-                                </div>
-                            </div>
+                                </div></div>
                         </div>
-
-
-
-
-
+                        
+                        
+                       
+                       
+                            
                     </div>
 
                     <div class="info  mb-5 d-block text-md-right">
                         <img src="img\contact\logo_blk.png" alt="logo">
 
                         <div class="location mt-5 ">
-                            <a class="" href="#">
-                                Suite 18B, 148 Connaught Road Central<i class="fas fa-map-marker-alt ml-2"></i><br>New
-                                Yankee</a>
+                            <a class="" href="#">                                
+                                Suite 18B, 148 Connaught Road Central<i class="fas fa-map-marker-alt ml-2"></i><br>New Yankee</a>
                         </div>
 
                         <div class="tele ">
                             <a href="tel:+1-(555)-333-22-11">+1 (555) 333 22 11<span class="icon"><i
-                                        class="fas fa-phone-alt ml-2"></i></span></a>
+                                class="fas fa-phone-alt ml-2"></i></span></a>
                         </div>
 
                         <div class="mail">
                             <a href="mailto:info@schon.chairs">info@schon.chairs<span class="icon"><i
-                                        class="far fa-envelope ml-2"></i></span></a>
+                                class="far fa-envelope ml-2"></i></span></a>
                         </div>
                     </div>
 
