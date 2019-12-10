@@ -1819,7 +1819,6 @@ li.product .rating {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     border: 1px solid rgb(231, 231, 231);
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
@@ -1827,9 +1826,28 @@ li.product .rating {
     color: rgb(121, 121, 121);
     padding: .5rem;
 }
+.userPanel2 div{
+    position: relative;
+    bottom: 2px;
+    color: #aeaeae;
+}
 
+.userPanel2 .addCart,
+.userPanel2 .like,
+.userPanel2 .preview{
+    color: #aeaeae;
+    padding: 0;
+}
 
-
+.userPanel2 .icon-blue{
+    color: rgb(66, 94, 255);
+}
+.userPanel2 .icon-red{
+    color: rgb(255, 52, 52);
+}
+.userPanel2 .icon-active{
+    color: rgb(31, 31, 31);
+}
 
 
 
@@ -4069,7 +4087,7 @@ ul.productsListPage .page-item {
 
     .ItemGrid {
         display: inline-grid;
-        grid-template-columns: 30vw 30vw 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 15vh 15vh 1fr;
         grid-template-areas:
             "Img-P Img-P  Name-P"

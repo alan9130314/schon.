@@ -4,7 +4,7 @@ $(document).ready(function () {
     $('#subModal').modal('show');
   });
 
-  $('.btn-lg_search').click(function (e) { 
+  $('.btn-lg_search').click(function (e) {
     e.preventDefault();
     $('#searchBar').modal('show');
   });
@@ -73,7 +73,7 @@ $(document).ready(function () {
   // });  
 
 
-  
+
 
   $('li.twoLevelBtn').mouseenter(function (event) {
     var heightBtn = $('li.twoLevelBtn').height();
@@ -88,7 +88,7 @@ $(document).ready(function () {
 
     return false;
   });
-  $('#twoLevelNav').mouseenter(function () { 
+  $('#twoLevelNav').mouseenter(function () {
     $('#twoLevelNav').stop().show('linear');
   });
 
@@ -101,9 +101,57 @@ $(document).ready(function () {
     }
   });
 
-$('#twoLevelNav').mouseleave(function () { 
-  $('#twoLevelNav').stop().hide('linear');
-});
+  $('#twoLevelNav').mouseleave(function () {
+    $('#twoLevelNav').stop().hide('linear');
+  });
+
+  $('.userPanel2 .addCart').click(function (e) { 
+    e.preventDefault();
+    $(this).children('i').toggleClass('icon-blue');
+    
+  });
+  $('.userPanel2 .like').click(function (e) { 
+    e.preventDefault();
+    if($(this).children('i').hasClass('far')){
+      $(this).children('i').removeClass('far').addClass('fas');
+      $(this).children('i').toggleClass('icon-red');
+    }else if ($(this).children('i').hasClass('fas')) {
+      $(this).children('i').removeClass('fas').addClass('far');
+      $(this).children('i').toggleClass('icon-red');
+    }
+    
+  });
+
+  $('.userPanel2 .preview').click(function (e) { 
+    e.preventDefault();
+    $(this).children('i').toggleClass('icon-active');
+    
+  });
+
+  
+  $('#shoppingCart button.delete').click(function (e) { 
+    e.preventDefault();    
+    e.stopPropagation();
+    $(this).closest('div.PWrap').remove();
+  });
+
+  $('#shoppingcartList button.SCListDelete').click(function (e) { 
+    e.preventDefault();    
+    e.stopPropagation();
+    $(this).closest('div.ItemGrid').next('hr').remove();
+    $(this).closest('div.ItemGrid').remove();
+   
+  });
+
+  $("li.nav-item a[href='#']").click(function (e) { 
+    e.preventDefault();
+    location.href = "error 404.html";
+  });
+
+  $("#twoLevelNav a[href='#']").click(function (e) { 
+    e.preventDefault();
+    location.href = "error 404.html";
+  });
 
 
 });
