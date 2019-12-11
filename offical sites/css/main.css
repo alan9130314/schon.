@@ -10,49 +10,39 @@ a:hover {
 /*subscribe modal*/
 #subModal .modal-dialog {
     min-width: 60%;
+    min-height: 60%;
 }
 
-#subModal .modal-content {
-    background-image: url(../img/subscribeModalImg/subModalImg.png);
-    background-repeat: no-repeat;
+#subModal .modal-content {    
     border-radius: 0;
-
+    position: relative;
+    min-width: 60vw;
+    min-height: 60vh;
+    padding: 2.5rem;
+    z-index: 1;
+    overflow: hidden;
 }
-
-@media(min-width:200px) {
-    #subModal .modal-content {
-        padding: 1rem;
-        background-size: contain;
-        background-position: 50px 85%;
-    }
+#subModal .modal-content img{    
+    position: absolute;
+    width: 90%;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    transform: translateX(20%);
+    z-index: -1;
 }
-
-@media(min-width:768px) {
-    #subModal .modal-content {
-        padding: 2rem;
-        background-size: contain;
-        background-position: 80px 90%;
-    }
-}
-
-@media(min-width:992px) {
-    #subModal .modal-content {
-        padding: 3rem;
-        background-size: contain;
-        background-position: 100px 90%;
-    }
-}
-
 
 #subModal h4.title {
     text-transform: uppercase;
     font-weight: bold;
+
 }
 
 #subModal p.content {
     color: #757575;
     font-weight: 500;
     margin-bottom: 2.5rem;
+
 }
 
 #subModal p.content span {
@@ -67,6 +57,12 @@ a:hover {
     flex-grow: 0;
     width: 60%;
     margin-bottom: .5rem;
+
+}
+#subModal .subDontShow{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 2.5rem;
 }
 
 #subModal button.btn {

@@ -139,9 +139,11 @@ $(document).ready(function () {
     e.preventDefault();    
     e.stopPropagation();
     $(this).closest('div.ItemGrid').next('hr').remove();
-    $(this).closest('div.ItemGrid').remove();
-   
+    $(this).closest('div.ItemGrid').remove();   
   });
+
+
+
 
   $("li.nav-item a[href='#']").click(function (e) { 
     e.preventDefault();
